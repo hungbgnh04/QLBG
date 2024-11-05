@@ -30,6 +30,7 @@ namespace QLBG.Views
             ShowFirstCustomerInfo();
 
             homePage = new TrangChu();
+            //
 
             ToolTip.SetToolTip(UserIcon, "Thông tin cá nhân");
             ToolTip.SetToolTip(HomeBtn, "Trang chủ");
