@@ -32,12 +32,6 @@
             this.panelParent = new System.Windows.Forms.Panel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.AsidePanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.ContainerPanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.HeaderPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.HomeLabel = new System.Windows.Forms.Label();
-            this.MinimizeControl = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.ToolTip = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.UserIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnEffect = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ProductBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -47,13 +41,19 @@
             this.OverallBtn = new Guna.UI2.WinForms.Guna2Button();
             this.EmployeeBtn = new Guna.UI2.WinForms.Guna2Button();
             this.CustomerBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.ContainerPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.HeaderPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.HomeLabel = new System.Windows.Forms.Label();
+            this.MinimizeControl = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.ToolTip = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.guna2GradientPanel2.SuspendLayout();
             this.AsidePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UserIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEffect)).BeginInit();
             this.ContainerPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.HeaderPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UserIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEffect)).BeginInit();
             this.SuspendLayout();
             // 
             // CloseControl
@@ -110,76 +110,6 @@
             this.AsidePanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Dropped;
             this.AsidePanel.Size = new System.Drawing.Size(95, 1094);
             this.AsidePanel.TabIndex = 0;
-            // 
-            // ContainerPanel
-            // 
-            this.ContainerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.ContainerPanel.Controls.Add(this.panelParent);
-            this.ContainerPanel.Controls.Add(this.panel2);
-            this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContainerPanel.Location = new System.Drawing.Point(129, 0);
-            this.ContainerPanel.Name = "ContainerPanel";
-            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1124);
-            this.ContainerPanel.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.HeaderPanel);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1736, 100);
-            this.panel2.TabIndex = 3;
-            // 
-            // HeaderPanel
-            // 
-            this.HeaderPanel.BackColor = System.Drawing.Color.Transparent;
-            this.HeaderPanel.Controls.Add(this.HomeLabel);
-            this.HeaderPanel.Controls.Add(this.MinimizeControl);
-            this.HeaderPanel.Controls.Add(this.CloseControl);
-            this.HeaderPanel.FillColor = System.Drawing.Color.White;
-            this.HeaderPanel.Location = new System.Drawing.Point(15, 15);
-            this.HeaderPanel.Name = "HeaderPanel";
-            this.HeaderPanel.Radius = 10;
-            this.HeaderPanel.ShadowColor = System.Drawing.Color.Black;
-            this.HeaderPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.HeaderPanel.Size = new System.Drawing.Size(1709, 70);
-            this.HeaderPanel.TabIndex = 0;
-            this.HeaderPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HeaderPanel_MouseDown);
-            // 
-            // HomeLabel
-            // 
-            this.HomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HomeLabel.Location = new System.Drawing.Point(26, 14);
-            this.HomeLabel.Name = "HomeLabel";
-            this.HomeLabel.Size = new System.Drawing.Size(710, 37);
-            this.HomeLabel.TabIndex = 2;
-            this.HomeLabel.Text = "Home";
-            // 
-            // MinimizeControl
-            // 
-            this.MinimizeControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinimizeControl.BackColor = System.Drawing.Color.Transparent;
-            this.MinimizeControl.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.MinimizeControl.FillColor = System.Drawing.Color.Transparent;
-            this.MinimizeControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinimizeControl.IconColor = System.Drawing.Color.Black;
-            this.MinimizeControl.Location = new System.Drawing.Point(1562, 12);
-            this.MinimizeControl.Name = "MinimizeControl";
-            this.MinimizeControl.PressedDepth = 50;
-            this.MinimizeControl.Size = new System.Drawing.Size(61, 42);
-            this.MinimizeControl.TabIndex = 1;
-            // 
-            // ToolTip
-            // 
-            this.ToolTip.AllowLinksHandling = true;
-            this.ToolTip.AutoPopDelay = 5000;
-            this.ToolTip.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.ToolTip.InitialDelay = 0;
-            this.ToolTip.MaximumSize = new System.Drawing.Size(0, 0);
-            this.ToolTip.ReshowDelay = 0;
-            this.ToolTip.TitleFont = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.ToolTip.TitleForeColor = System.Drawing.Color.Black;
             // 
             // UserIcon
             // 
@@ -374,6 +304,76 @@
             this.CustomerBtn.TabIndex = 3;
             this.CustomerBtn.Click += new System.EventHandler(this.CustomerBtn_Click);
             // 
+            // ContainerPanel
+            // 
+            this.ContainerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.ContainerPanel.Controls.Add(this.panelParent);
+            this.ContainerPanel.Controls.Add(this.panel2);
+            this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContainerPanel.Location = new System.Drawing.Point(129, 0);
+            this.ContainerPanel.Name = "ContainerPanel";
+            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1124);
+            this.ContainerPanel.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.HeaderPanel);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1736, 100);
+            this.panel2.TabIndex = 3;
+            // 
+            // HeaderPanel
+            // 
+            this.HeaderPanel.BackColor = System.Drawing.Color.Transparent;
+            this.HeaderPanel.Controls.Add(this.HomeLabel);
+            this.HeaderPanel.Controls.Add(this.MinimizeControl);
+            this.HeaderPanel.Controls.Add(this.CloseControl);
+            this.HeaderPanel.FillColor = System.Drawing.Color.White;
+            this.HeaderPanel.Location = new System.Drawing.Point(15, 15);
+            this.HeaderPanel.Name = "HeaderPanel";
+            this.HeaderPanel.Radius = 10;
+            this.HeaderPanel.ShadowColor = System.Drawing.Color.Black;
+            this.HeaderPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.HeaderPanel.Size = new System.Drawing.Size(1709, 70);
+            this.HeaderPanel.TabIndex = 0;
+            this.HeaderPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HeaderPanel_MouseDown);
+            // 
+            // HomeLabel
+            // 
+            this.HomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeLabel.Location = new System.Drawing.Point(26, 14);
+            this.HomeLabel.Name = "HomeLabel";
+            this.HomeLabel.Size = new System.Drawing.Size(710, 37);
+            this.HomeLabel.TabIndex = 2;
+            this.HomeLabel.Text = "Home";
+            // 
+            // MinimizeControl
+            // 
+            this.MinimizeControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeControl.BackColor = System.Drawing.Color.Transparent;
+            this.MinimizeControl.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.MinimizeControl.FillColor = System.Drawing.Color.Transparent;
+            this.MinimizeControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimizeControl.IconColor = System.Drawing.Color.Black;
+            this.MinimizeControl.Location = new System.Drawing.Point(1562, 12);
+            this.MinimizeControl.Name = "MinimizeControl";
+            this.MinimizeControl.PressedDepth = 50;
+            this.MinimizeControl.Size = new System.Drawing.Size(61, 42);
+            this.MinimizeControl.TabIndex = 1;
+            // 
+            // ToolTip
+            // 
+            this.ToolTip.AllowLinksHandling = true;
+            this.ToolTip.AutoPopDelay = 5000;
+            this.ToolTip.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.ToolTip.InitialDelay = 0;
+            this.ToolTip.MaximumSize = new System.Drawing.Size(0, 0);
+            this.ToolTip.ReshowDelay = 0;
+            this.ToolTip.TitleFont = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.ToolTip.TitleForeColor = System.Drawing.Color.Black;
+            // 
             // frmLayout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -386,11 +386,11 @@
             this.Load += new System.EventHandler(this.MenuForm_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.AsidePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UserIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEffect)).EndInit();
             this.ContainerPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.HeaderPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.UserIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEffect)).EndInit();
             this.ResumeLayout(false);
 
         }
