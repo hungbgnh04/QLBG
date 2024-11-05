@@ -38,16 +38,16 @@ namespace QLBG.Views
             lackPassword.Visible = false;
             lackUsername.Visible = false;
             incorrectInfo.Visible = false;
-            lackPassAgainSignUp.Visible = false;
+            //lackPassAgainSignUp.Visible = false;
             lackOTPLabel.Visible = false;
             wrongOTPLabel.Visible = false;
-            signUpPanel.Visible = false;
+            //signUpPanel.Visible = false;
             createNewPassPanel.Visible = false;
             OTPVerifyPanel.Visible = false;
-            lackEmailSignUp.Visible = false;
-            lackPassSignUp.Visible = false;
-            lackUserSignUp.Visible = false;
-            duplicateAcc.Visible = false;
+            //lackEmailSignUp.Visible = false;
+            //lackPassSignUp.Visible = false;
+            //lackUserSignUp.Visible = false;
+            //duplicateAcc.Visible = false;
             pnlForgotPassword.Visible = false;
             emailNotFound.Visible = false;
             emailNotType.Visible = false;
@@ -123,14 +123,14 @@ namespace QLBG.Views
             {
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-                mail.From = new MailAddress(Properties.Resources.emailToSentOTP);
+                //mail.From = new MailAddress(Properties.Resources.emailToSentOTP);
                 mail.To.Add(toEmail);
                 mail.Subject = "Your OTP Code";
                 mail.Body = $"Your OTP Code is : {otp}";
 
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.
-                    NetworkCredential(Properties.Resources.emailToSentOTP, Properties.Resources.passwordApp);
+                //SmtpServer.Credentials = new System.Net.
+                //    NetworkCredential(Properties.Resources.emailToSentOTP, Properties.Resources.passwordApp);
                 SmtpServer.EnableSsl = true;
 
                 // Gửi email dưới nền
@@ -269,21 +269,21 @@ namespace QLBG.Views
 
         private void label13_Click(object sender, EventArgs e)
         {
-            signUpPanel.Visible = true;
+            //signUpPanel.Visible = true;
             panel2.Dock = DockStyle.Right;
-            signUpPanel.Dock = DockStyle.Left;
+            //signUpPanel.Dock = DockStyle.Left;
         }
 
         private void label12_Click_1(object sender, EventArgs e)
         {
             panel2.Dock = DockStyle.Left;
-            signUpPanel.Visible = false;
+            //signUpPanel.Visible = false;
         }
 
         private void label12_Click_2(object sender, EventArgs e)
         {
             panel2.Dock = DockStyle.Left;
-            signUpPanel.Visible = false;
+            //signUpPanel.Visible = false;
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -305,33 +305,33 @@ namespace QLBG.Views
 
         private void button4_MouseHover(object sender, EventArgs e)
         {
-            button4.ForeColor = System.Drawing.Color.Black;
+            //button4.ForeColor = System.Drawing.Color.Black;
         }
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
-            button4.ForeColor = System.Drawing.Color.Lime;
+            //button4.ForeColor = System.Drawing.Color.Lime;
         }
 
         private void button4_MouseMove(object sender, MouseEventArgs e)
         {
-            button4.ForeColor = System.Drawing.Color.Black;
+            //button4.ForeColor = System.Drawing.Color.Black;
 
         }
 
         private void backToLogin_MouseHover(object sender, EventArgs e)
         {
-            backToLogin.ForeColor = System.Drawing.Color.Lime;
+            //backToLogin.ForeColor = System.Drawing.Color.Lime;
         }
 
         private void backToLogin_MouseLeave(object sender, EventArgs e)
         {
-            backToLogin.ForeColor = System.Drawing.Color.White;
+            //backToLogin.ForeColor = System.Drawing.Color.White;
         }
 
         private void backToLogin_MouseMove(object sender, EventArgs e)
         {
-            backToLogin.ForeColor = System.Drawing.Color.Lime;
+            //backToLogin.ForeColor = System.Drawing.Color.Lime;
         }
 
         private void signUpLabel_MouseHover(object sender, EventArgs e)
@@ -401,19 +401,19 @@ namespace QLBG.Views
             // Disable the button to prevent multiple clicks
             btnOTP.Enabled = false;
 
-            string email = textBox5.Text; // Lấy email từ TextBox
+            //string email = textBox5.Text; // Lấy email từ TextBox
             string otp = randDomOTP();     // Tạo OTP
 
             // Gửi email dưới nền
-            bool isSuccess = await SendEmailAsync(email, otp);
+            //bool isSuccess = await SendEmailAsync(email, otp);
 
-            if (isSuccess)
-            {
-                MessageBox.Show("OTP sent successfully!");
-            }
+            //if (isSuccess)
+            //{
+            //    MessageBox.Show("OTP sent successfully!");
+            //}
 
             // Kích hoạt lại nút sau khi hoàn thành
-            btnOTP.Enabled = true;
+            //btnOTP.Enabled = true;
         }
 
 
@@ -430,9 +430,9 @@ namespace QLBG.Views
                     if (stateOTPKind == 0)
                     {
                         lackOTPLabel.Visible = false;
-                        sqlconnect.addingAccontToSQL(textBox4.Text, textBox3.Text, textBox5.Text);
+                        //sqlconnect.addingAccontToSQL(textBox4.Text, textBox3.Text, textBox5.Text);
                         OTPVerifyPanel.Visible = false;
-                        signUpPanel.Visible = false;
+                        //signUpPanel.Visible = false;
                         panel2.Dock = DockStyle.Left;
                         //Form3 form3 = new Form3("", "Sign up successful");
                         //form3.Show();
@@ -501,8 +501,8 @@ namespace QLBG.Views
             if (stateOTPKind == 0)
             {
                 OTPVerifyPanel.Visible = false;
-                signUpPanel.Visible = true;
-                signUpPanel.Dock = DockStyle.Left;
+                //signUpPanel.Visible = true;
+                //signUpPanel.Dock = DockStyle.Left;
             }
             else
             {

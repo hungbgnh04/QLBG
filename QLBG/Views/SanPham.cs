@@ -16,5 +16,11 @@ namespace QLBG.Views
         {
             InitializeComponent();
         }
+
+        private void ChiTietSanPham(object sender, EventArgs e)
+        {
+            var sp = sender as TheSanPham;
+
+        }
     }
 }

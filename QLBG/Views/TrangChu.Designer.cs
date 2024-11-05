@@ -28,21 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.Charts.WinForms.ChartFont chartFont1 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont2 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont3 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont4 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid1 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.Tick tick1 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont5 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid2 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.Tick tick2 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont6 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid3 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.PointLabel pointLabel1 = new Guna.Charts.WinForms.PointLabel();
-            Guna.Charts.WinForms.ChartFont chartFont7 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Tick tick3 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont8 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont9 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont10 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont11 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont12 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid4 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.Tick tick4 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont13 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid5 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.Tick tick5 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont14 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid6 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.PointLabel pointLabel2 = new Guna.Charts.WinForms.PointLabel();
+            Guna.Charts.WinForms.ChartFont chartFont15 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Tick tick6 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont16 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.LPoint lPoint21 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint22 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint23 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint24 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint25 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint26 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint27 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint28 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint29 = new Guna.Charts.WinForms.LPoint();
+            Guna.Charts.WinForms.LPoint lPoint30 = new Guna.Charts.WinForms.LPoint();
             Guna.Charts.WinForms.LPoint lPoint1 = new Guna.Charts.WinForms.LPoint();
             Guna.Charts.WinForms.LPoint lPoint2 = new Guna.Charts.WinForms.LPoint();
             Guna.Charts.WinForms.LPoint lPoint3 = new Guna.Charts.WinForms.LPoint();
@@ -53,16 +63,7 @@
             Guna.Charts.WinForms.LPoint lPoint8 = new Guna.Charts.WinForms.LPoint();
             Guna.Charts.WinForms.LPoint lPoint9 = new Guna.Charts.WinForms.LPoint();
             Guna.Charts.WinForms.LPoint lPoint10 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint11 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint12 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint13 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint14 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint15 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint16 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint17 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint18 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint19 = new Guna.Charts.WinForms.LPoint();
-            Guna.Charts.WinForms.LPoint lPoint20 = new Guna.Charts.WinForms.LPoint();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -233,64 +234,102 @@
             this.OverallChart.Datasets.AddRange(new Guna.Charts.Interfaces.IGunaDataset[] {
             this.TableData,
             this.ChairData});
-            chartFont1.FontName = "Arial";
-            this.OverallChart.Legend.LabelFont = chartFont1;
+            chartFont9.FontName = "Arial";
+            this.OverallChart.Legend.LabelFont = chartFont9;
             this.OverallChart.Location = new System.Drawing.Point(89, 341);
             this.OverallChart.Name = "OverallChart";
             this.OverallChart.Size = new System.Drawing.Size(1095, 596);
             this.OverallChart.TabIndex = 1;
-            chartFont2.FontName = "Arial";
-            chartFont2.Size = 16;
-            chartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            this.OverallChart.Title.Font = chartFont2;
+            chartFont10.FontName = "Arial";
+            chartFont10.Size = 16;
+            chartFont10.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.OverallChart.Title.Font = chartFont10;
             this.OverallChart.Title.Text = "Thống kê doanh thu";
-            chartFont3.FontName = "Arial";
-            this.OverallChart.Tooltips.BodyFont = chartFont3;
-            chartFont4.FontName = "Arial";
-            chartFont4.Size = 9;
-            chartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            this.OverallChart.Tooltips.TitleFont = chartFont4;
-            this.OverallChart.XAxes.GridLines = grid1;
-            chartFont5.FontName = "Arial";
-            chartFont5.Size = 12;
-            tick1.Font = chartFont5;
-            this.OverallChart.XAxes.Ticks = tick1;
-            this.OverallChart.YAxes.GridLines = grid2;
-            chartFont6.FontName = "Arial";
-            chartFont6.Size = 12;
-            tick2.Font = chartFont6;
-            this.OverallChart.YAxes.Ticks = tick2;
-            this.OverallChart.ZAxes.GridLines = grid3;
-            chartFont7.FontName = "Arial";
-            pointLabel1.Font = chartFont7;
-            this.OverallChart.ZAxes.PointLabels = pointLabel1;
-            chartFont8.FontName = "Arial";
-            tick3.Font = chartFont8;
-            this.OverallChart.ZAxes.Ticks = tick3;
+            chartFont11.FontName = "Arial";
+            this.OverallChart.Tooltips.BodyFont = chartFont11;
+            chartFont12.FontName = "Arial";
+            chartFont12.Size = 9;
+            chartFont12.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.OverallChart.Tooltips.TitleFont = chartFont12;
+            this.OverallChart.XAxes.GridLines = grid4;
+            chartFont13.FontName = "Arial";
+            chartFont13.Size = 12;
+            tick4.Font = chartFont13;
+            this.OverallChart.XAxes.Ticks = tick4;
+            this.OverallChart.YAxes.GridLines = grid5;
+            chartFont14.FontName = "Arial";
+            chartFont14.Size = 12;
+            tick5.Font = chartFont14;
+            this.OverallChart.YAxes.Ticks = tick5;
+            this.OverallChart.ZAxes.GridLines = grid6;
+            chartFont15.FontName = "Arial";
+            pointLabel2.Font = chartFont15;
+            this.OverallChart.ZAxes.PointLabels = pointLabel2;
+            chartFont16.FontName = "Arial";
+            tick6.Font = chartFont16;
+            this.OverallChart.ZAxes.Ticks = tick6;
             // 
             // TableData
             // 
-            lPoint1.Label = "1";
-            lPoint1.Y = 10301600D;
-            lPoint2.Label = "2";
-            lPoint2.Y = 15106000D;
-            lPoint3.Label = "3";
-            lPoint3.Y = 16176000D;
-            lPoint4.Label = "4";
-            lPoint4.Y = 14196000D;
-            lPoint5.Label = "5";
-            lPoint5.Y = 10786000D;
-            lPoint6.Label = "6";
-            lPoint6.Y = 21788000D;
-            lPoint7.Label = "7";
-            lPoint7.Y = 17986000D;
-            lPoint8.Label = "8";
-            lPoint8.Y = 20125600D;
-            lPoint9.Label = "9";
-            lPoint9.Y = 18996000D;
-            lPoint10.Label = "10";
-            lPoint10.Y = 17889000D;
+            lPoint21.Label = "1";
+            lPoint21.Y = 10301600D;
+            lPoint22.Label = "2";
+            lPoint22.Y = 15106000D;
+            lPoint23.Label = "3";
+            lPoint23.Y = 16176000D;
+            lPoint24.Label = "4";
+            lPoint24.Y = 14196000D;
+            lPoint25.Label = "5";
+            lPoint25.Y = 10786000D;
+            lPoint26.Label = "6";
+            lPoint26.Y = 21788000D;
+            lPoint27.Label = "7";
+            lPoint27.Y = 17986000D;
+            lPoint28.Label = "8";
+            lPoint28.Y = 20125600D;
+            lPoint29.Label = "9";
+            lPoint29.Y = 18996000D;
+            lPoint30.Label = "10";
+            lPoint30.Y = 17889000D;
             this.TableData.DataPoints.AddRange(new Guna.Charts.WinForms.LPoint[] {
+            lPoint21,
+            lPoint22,
+            lPoint23,
+            lPoint24,
+            lPoint25,
+            lPoint26,
+            lPoint27,
+            lPoint28,
+            lPoint29,
+            lPoint30});
+            this.TableData.FillColors.AddRange(new System.Drawing.Color[] {
+            System.Drawing.Color.MediumTurquoise});
+            this.TableData.Label = "Bàn";
+            this.TableData.TargetChart = this.OverallChart;
+            // 
+            // ChairData
+            // 
+            lPoint1.Label = "1";
+            lPoint1.Y = 8975000D;
+            lPoint2.Label = "2";
+            lPoint2.Y = 7840000D;
+            lPoint3.Label = "3";
+            lPoint3.Y = 6687000D;
+            lPoint4.Label = "4";
+            lPoint4.Y = 9181600D;
+            lPoint5.Label = "5";
+            lPoint5.Y = 15040000D;
+            lPoint6.Label = "6";
+            lPoint6.Y = 16998000D;
+            lPoint7.Label = "7";
+            lPoint7.Y = 18800000D;
+            lPoint8.Label = "8";
+            lPoint8.Y = 16998700D;
+            lPoint9.Label = "9";
+            lPoint9.Y = 20000000D;
+            lPoint10.Label = "10";
+            lPoint10.Y = 18600000D;
+            this.ChairData.DataPoints.AddRange(new Guna.Charts.WinForms.LPoint[] {
             lPoint1,
             lPoint2,
             lPoint3,
@@ -301,44 +340,6 @@
             lPoint8,
             lPoint9,
             lPoint10});
-            this.TableData.FillColors.AddRange(new System.Drawing.Color[] {
-            System.Drawing.Color.MediumTurquoise});
-            this.TableData.Label = "Bàn";
-            this.TableData.TargetChart = this.OverallChart;
-            // 
-            // ChairData
-            // 
-            lPoint11.Label = "1";
-            lPoint11.Y = 8975000D;
-            lPoint12.Label = "2";
-            lPoint12.Y = 7840000D;
-            lPoint13.Label = "3";
-            lPoint13.Y = 6687000D;
-            lPoint14.Label = "4";
-            lPoint14.Y = 9181600D;
-            lPoint15.Label = "5";
-            lPoint15.Y = 15040000D;
-            lPoint16.Label = "6";
-            lPoint16.Y = 16998000D;
-            lPoint17.Label = "7";
-            lPoint17.Y = 18800000D;
-            lPoint18.Label = "8";
-            lPoint18.Y = 16998700D;
-            lPoint19.Label = "9";
-            lPoint19.Y = 20000000D;
-            lPoint20.Label = "10";
-            lPoint20.Y = 18600000D;
-            this.ChairData.DataPoints.AddRange(new Guna.Charts.WinForms.LPoint[] {
-            lPoint11,
-            lPoint12,
-            lPoint13,
-            lPoint14,
-            lPoint15,
-            lPoint16,
-            lPoint17,
-            lPoint18,
-            lPoint19,
-            lPoint20});
             this.ChairData.FillColors.AddRange(new System.Drawing.Color[] {
             System.Drawing.Color.MediumBlue});
             this.ChairData.Label = "Ghế";
@@ -395,7 +396,7 @@
             // 
             // UserImageGPB
             // 
-            this.UserImageGPB.Image = global::QLBG.Properties.Resources.ic_user;
+            this.UserImageGPB.Image = ((System.Drawing.Image)(resources.GetObject("UserImageGPB.Image")));
             this.UserImageGPB.ImageRotate = 0F;
             this.UserImageGPB.Location = new System.Drawing.Point(68, 27);
             this.UserImageGPB.Name = "UserImageGPB";
