@@ -648,5 +648,5 @@ namespace QLBG.Views
             return textBox10.Text == OTPCode;
         }
 
-    }//
+    }
 }
