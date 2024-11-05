@@ -1,4 +1,6 @@
 ﻿using System;
+using QLBG.Helpers;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
@@ -7,12 +9,15 @@ using System.Windows.Forms;
 namespace QLBG.DAL
 {
     internal class DatabaseManager
-        //
+    //
     {
         private static DatabaseManager instance;
-        private readonly string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data\\QLBG.mdf") + ";Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;";
+        private readonly string connectionString;
 
-        private DatabaseManager() { }
+        private DatabaseManager()
+        {
+            connectionString = App_Default.DefaultConnectionString;
+        }
 
         public static DatabaseManager Instance
         {
@@ -26,6 +31,9 @@ namespace QLBG.DAL
             }
         }
 
+        /// <summary>
+        /// Opens the database connection if it's closed.
+        /// </summary>
         public void OpenConnection(SqlConnection connection)
         {
             if (connection.State == ConnectionState.Closed)
@@ -34,6 +42,9 @@ namespace QLBG.DAL
             }
         }
 
+        /// <summary>
+        /// Closes the database connection if it's open.
+        /// </summary>
         public void CloseConnection(SqlConnection connection)
         {
             if (connection.State == ConnectionState.Open)
@@ -42,6 +53,9 @@ namespace QLBG.DAL
             }
         }
 
+        /// <summary>
+        /// Executes a query and returns the results in a DataTable.
+        /// </summary>
         public DataTable ExecuteQuery(string query, params SqlParameter[] parameters)
         {
             DataTable dataTable = new DataTable();
@@ -72,6 +86,9 @@ namespace QLBG.DAL
             return dataTable;
         }
 
+        /// <summary>
+        /// Executes a non-query SQL command (INSERT, UPDATE, DELETE).
+        /// </summary>
         public int ExecuteNonQuery(string query, params SqlParameter[] parameters)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -83,6 +100,10 @@ namespace QLBG.DAL
                     try
                     {
                         return command.ExecuteNonQuery();
+                        int result = command.ExecuteNonQuery();
+                        // Log kết quả
+                        Console.WriteLine($"ExecuteNonQuery: {query}, RowsAffected: {result}");
+                        return result;
                     }
                     catch (Exception ex)
                     {
@@ -93,6 +114,10 @@ namespace QLBG.DAL
             }
         }
 
+
+        /// <summary>
+        /// Executes a scalar SQL command and returns the result.
+        /// </summary>
         public object ExecuteScalar(string query, params SqlParameter[] parameters)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -114,12 +139,18 @@ namespace QLBG.DAL
             }
         }
 
-        private void ShowErrorMessage(string message)
+            /// <summary>
+            /// Displays an error message to the user.
+            /// </summary>
+        internal void ShowErrorMessage(string message)
         {
             MessageBox.Show(message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        public void ShowSuccessMessage(string message)
+            /// <summary>
+            /// Displays a success message to the user.
+            /// </summary>
+        internal void ShowSuccessMessage(string message)
         {
             MessageBox.Show(message, "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
