@@ -30,16 +30,32 @@
         {
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.pgSanPham = new System.Windows.Forms.TabPage();
-            this.NhNhaCC = new System.Windows.Forms.TabPage();
+            this.pgChatLieu = new System.Windows.Forms.TabPage();
+            this.sảNhaSX = new System.Windows.Forms.TabPage();
+            this.pgNuocSX = new System.Windows.Forms.TabPage();
+            this.pgKichCo = new System.Windows.Forms.TabPage();
+            this.pgMauSac = new System.Windows.Forms.TabPage();
+            this.pgLoai = new System.Windows.Forms.TabPage();
+            this.pgHinhDang = new System.Windows.Forms.TabPage();
+            this.pgDacDiem = new System.Windows.Forms.TabPage();
+            this.pgCongDung = new System.Windows.Forms.TabPage();
             this.guna2TabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2TabControl1
             // 
             this.guna2TabControl1.Controls.Add(this.pgSanPham);
-            this.guna2TabControl1.Controls.Add(this.NhNhaCC);
+            this.guna2TabControl1.Controls.Add(this.pgChatLieu);
+            this.guna2TabControl1.Controls.Add(this.sảNhaSX);
+            this.guna2TabControl1.Controls.Add(this.pgNuocSX);
+            this.guna2TabControl1.Controls.Add(this.pgKichCo);
+            this.guna2TabControl1.Controls.Add(this.pgMauSac);
+            this.guna2TabControl1.Controls.Add(this.pgLoai);
+            this.guna2TabControl1.Controls.Add(this.pgHinhDang);
+            this.guna2TabControl1.Controls.Add(this.pgDacDiem);
+            this.guna2TabControl1.Controls.Add(this.pgCongDung);
             this.guna2TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TabControl1.ItemSize = new System.Drawing.Size(220, 60);
+            this.guna2TabControl1.ItemSize = new System.Drawing.Size(170, 60);
             this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
@@ -51,15 +67,15 @@
             this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
+            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
             this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
+            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(220, 60);
+            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(170, 60);
             this.guna2TabControl1.TabIndex = 0;
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
@@ -74,15 +90,94 @@
             this.pgSanPham.TabIndex = 0;
             this.pgSanPham.Text = "Sản phẩm";
             // 
-            // NhNhaCC
+            // pgChatLieu
             // 
-            this.NhNhaCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.NhNhaCC.Location = new System.Drawing.Point(4, 64);
-            this.NhNhaCC.Name = "NhNhaCC";
-            this.NhNhaCC.Padding = new System.Windows.Forms.Padding(3);
-            this.NhNhaCC.Size = new System.Drawing.Size(1728, 956);
-            this.NhNhaCC.TabIndex = 1;
-            this.NhNhaCC.Text = "Nhà cung cấp";
+            this.pgChatLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgChatLieu.Location = new System.Drawing.Point(4, 64);
+            this.pgChatLieu.Name = "pgChatLieu";
+            this.pgChatLieu.Padding = new System.Windows.Forms.Padding(3);
+            this.pgChatLieu.Size = new System.Drawing.Size(1728, 956);
+            this.pgChatLieu.TabIndex = 1;
+            this.pgChatLieu.Text = "Chất liệu";
+            // 
+            // sảNhaSX
+            // 
+            this.sảNhaSX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.sảNhaSX.Location = new System.Drawing.Point(4, 64);
+            this.sảNhaSX.Name = "sảNhaSX";
+            this.sảNhaSX.Padding = new System.Windows.Forms.Padding(3);
+            this.sảNhaSX.Size = new System.Drawing.Size(1728, 956);
+            this.sảNhaSX.TabIndex = 2;
+            this.sảNhaSX.Text = "Nhà sản xuất";
+            // 
+            // pgNuocSX
+            // 
+            this.pgNuocSX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgNuocSX.Location = new System.Drawing.Point(4, 64);
+            this.pgNuocSX.Name = "pgNuocSX";
+            this.pgNuocSX.Padding = new System.Windows.Forms.Padding(3);
+            this.pgNuocSX.Size = new System.Drawing.Size(1728, 956);
+            this.pgNuocSX.TabIndex = 3;
+            this.pgNuocSX.Text = "Nước sản xuất";
+            // 
+            // pgKichCo
+            // 
+            this.pgKichCo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgKichCo.Location = new System.Drawing.Point(4, 64);
+            this.pgKichCo.Name = "pgKichCo";
+            this.pgKichCo.Padding = new System.Windows.Forms.Padding(3);
+            this.pgKichCo.Size = new System.Drawing.Size(1728, 956);
+            this.pgKichCo.TabIndex = 4;
+            this.pgKichCo.Text = "Kích cỡ";
+            // 
+            // pgMauSac
+            // 
+            this.pgMauSac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgMauSac.Location = new System.Drawing.Point(4, 64);
+            this.pgMauSac.Name = "pgMauSac";
+            this.pgMauSac.Padding = new System.Windows.Forms.Padding(3);
+            this.pgMauSac.Size = new System.Drawing.Size(1728, 956);
+            this.pgMauSac.TabIndex = 5;
+            this.pgMauSac.Text = "Màu sắc";
+            // 
+            // pgLoai
+            // 
+            this.pgLoai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgLoai.Location = new System.Drawing.Point(4, 64);
+            this.pgLoai.Name = "pgLoai";
+            this.pgLoai.Padding = new System.Windows.Forms.Padding(3);
+            this.pgLoai.Size = new System.Drawing.Size(1728, 956);
+            this.pgLoai.TabIndex = 6;
+            this.pgLoai.Text = "Loại";
+            // 
+            // pgHinhDang
+            // 
+            this.pgHinhDang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgHinhDang.Location = new System.Drawing.Point(4, 64);
+            this.pgHinhDang.Name = "pgHinhDang";
+            this.pgHinhDang.Size = new System.Drawing.Size(1728, 956);
+            this.pgHinhDang.TabIndex = 7;
+            this.pgHinhDang.Text = "Hình dạng";
+            // 
+            // pgDacDiem
+            // 
+            this.pgDacDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgDacDiem.Location = new System.Drawing.Point(4, 64);
+            this.pgDacDiem.Name = "pgDacDiem";
+            this.pgDacDiem.Padding = new System.Windows.Forms.Padding(3);
+            this.pgDacDiem.Size = new System.Drawing.Size(1728, 956);
+            this.pgDacDiem.TabIndex = 8;
+            this.pgDacDiem.Text = "Đặc điểm";
+            // 
+            // pgCongDung
+            // 
+            this.pgCongDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgCongDung.Location = new System.Drawing.Point(4, 64);
+            this.pgCongDung.Name = "pgCongDung";
+            this.pgCongDung.Padding = new System.Windows.Forms.Padding(3);
+            this.pgCongDung.Size = new System.Drawing.Size(1728, 956);
+            this.pgCongDung.TabIndex = 9;
+            this.pgCongDung.Text = "Công dụng";
             // 
             // SanPham
             // 
@@ -101,6 +196,14 @@
 
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.TabPage pgSanPham;
-        private System.Windows.Forms.TabPage NhNhaCC;
+        private System.Windows.Forms.TabPage pgChatLieu;
+        private System.Windows.Forms.TabPage sảNhaSX;
+        private System.Windows.Forms.TabPage pgNuocSX;
+        private System.Windows.Forms.TabPage pgKichCo;
+        private System.Windows.Forms.TabPage pgMauSac;
+        private System.Windows.Forms.TabPage pgLoai;
+        private System.Windows.Forms.TabPage pgHinhDang;
+        private System.Windows.Forms.TabPage pgDacDiem;
+        private System.Windows.Forms.TabPage pgCongDung;
     }
 }

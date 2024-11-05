@@ -108,7 +108,7 @@
             this.AsidePanel.Radius = 15;
             this.AsidePanel.ShadowColor = System.Drawing.Color.Black;
             this.AsidePanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Dropped;
-            this.AsidePanel.Size = new System.Drawing.Size(95, 1094);
+            this.AsidePanel.Size = new System.Drawing.Size(95, 1072);
             this.AsidePanel.TabIndex = 0;
             // 
             // UserIcon
@@ -201,7 +201,7 @@
             this.LogoutBtn.ForeColor = System.Drawing.Color.White;
             this.LogoutBtn.Image = global::QLBG.Properties.Resources.icons8_exit_52px_1;
             this.LogoutBtn.ImageSize = new System.Drawing.Size(25, 25);
-            this.LogoutBtn.Location = new System.Drawing.Point(15, 993);
+            this.LogoutBtn.Location = new System.Drawing.Point(13, 965);
             this.LogoutBtn.Name = "LogoutBtn";
             this.LogoutBtn.Size = new System.Drawing.Size(70, 70);
             this.LogoutBtn.TabIndex = 4;
@@ -312,7 +312,7 @@
             this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContainerPanel.Location = new System.Drawing.Point(129, 0);
             this.ContainerPanel.Name = "ContainerPanel";
-            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1124);
+            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1102);
             this.ContainerPanel.TabIndex = 2;
             // 
             // panel2

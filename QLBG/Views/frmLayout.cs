@@ -188,9 +188,10 @@ namespace QLBG.Views
 
         private void ProductBtn_Click(object sender, EventArgs e)
         {
-            //ShowControl(productControll);
+            ShowControl(new SanPham());
             moveEffect(sender);
             HomeLabel.Text = "Danh sách sản phẩm";
+
         }
 
         private void CustomerBtn_Click(object sender, EventArgs e)
@@ -220,16 +221,6 @@ namespace QLBG.Views
         public void ShowSanPhamControl()
         {
             //ShowControl(productControll);
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            //ShowControl(productControll);
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            //ShowControl(customerControll);
         }
     }
 }
