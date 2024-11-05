@@ -79,6 +79,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\HoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SanPham.Designer.cs">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TrangChu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     </Compile>
     <EmbeddedResource Include="Views\frmLayout.resx">
       <DependentUpon>frmLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SanPham.resx">
+      <DependentUpon>SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
@@ -201,27 +219,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sky1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Data\QLBG.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Data\QLBG_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>QLBG.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

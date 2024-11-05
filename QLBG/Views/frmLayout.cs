@@ -183,6 +183,7 @@ namespace QLBG.Views
         {
             moveEffect(sender);
             HomeLabel.Text = "Hóa đơn";
+            ShowControl(new HoaDon());
         }
 
         private void ProductBtn_Click(object sender, EventArgs e)

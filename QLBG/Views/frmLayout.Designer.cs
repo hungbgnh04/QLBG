@@ -312,7 +312,7 @@
             this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContainerPanel.Location = new System.Drawing.Point(129, 0);
             this.ContainerPanel.Name = "ContainerPanel";
-            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1102);
+            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1124);
             this.ContainerPanel.TabIndex = 2;
             // 
             // panel2
@@ -367,7 +367,7 @@
             // 
             this.ToolTip.AllowLinksHandling = true;
             this.ToolTip.AutoPopDelay = 5000;
-            this.ToolTip.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.ToolTip.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.ToolTip.InitialDelay = 0;
             this.ToolTip.MaximumSize = new System.Drawing.Size(0, 0);
             this.ToolTip.ReshowDelay = 0;
