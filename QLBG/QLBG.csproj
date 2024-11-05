@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="DAL\DatabaseHelper.cs" />
     <Compile Include="DAL\DatabaseManager.cs" />
+    <Compile Include="Helpers\App_Default.cs" />
     <Compile Include="Views\frmLayout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,9 +248,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="App_Data\QLBG_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>QLBG.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\icons8-password-301.png" />
+    <None Include="Resources\icons8-email-30 %281%29.png" />
+    <None Include="Resources\icons8-code-30.png" />
+    <None Include="Resources\icons8-password-30.png" />
+    <None Include="Resources\plastic-chair-clipart1.png" />
+    <None Include="Resources\plastic-chair-clipart.png" />
+    <None Include="Resources\GX004.png" />
+    <None Include="Resources\office-chair-icon-4.jpg" />
+    <None Include="Resources\kenshi_Yonezu.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
