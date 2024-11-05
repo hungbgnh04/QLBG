@@ -7,6 +7,7 @@ using System.Windows.Forms;
 namespace QLBG.DAL
 {
     internal class DatabaseManager
+        //
     {
         private static DatabaseManager instance;
         private readonly string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data\\QLBG.mdf") + ";Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;";
