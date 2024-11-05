@@ -19,11 +19,11 @@ namespace QLBG
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLBG.Views.LoginForm());
+            Application.Run(new QLBG.Views.frmChiTietSanPham());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
 
         private static extern bool SetProcessDPIAware();
-    }//
+    }
 }

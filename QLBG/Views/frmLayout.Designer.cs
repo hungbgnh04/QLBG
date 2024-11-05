@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLayout));
             this.CloseControl = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panelParent = new System.Windows.Forms.Panel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -75,7 +76,7 @@
             this.panelParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelParent.Location = new System.Drawing.Point(0, 100);
             this.panelParent.Name = "panelParent";
-            this.panelParent.Size = new System.Drawing.Size(1736, 1002);
+            this.panelParent.Size = new System.Drawing.Size(1736, 1024);
             this.panelParent.TabIndex = 2;
             // 
             // guna2GradientPanel2
@@ -87,7 +88,7 @@
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(129, 1102);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(129, 1124);
             this.guna2GradientPanel2.TabIndex = 1;
             // 
             // AsidePanel
@@ -108,12 +109,12 @@
             this.AsidePanel.Radius = 15;
             this.AsidePanel.ShadowColor = System.Drawing.Color.Black;
             this.AsidePanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Dropped;
-            this.AsidePanel.Size = new System.Drawing.Size(95, 1072);
+            this.AsidePanel.Size = new System.Drawing.Size(95, 1094);
             this.AsidePanel.TabIndex = 0;
             // 
             // UserIcon
             // 
-            this.UserIcon.Image = global::QLBG.Properties.Resources.ic_user;
+            this.UserIcon.Image = ((System.Drawing.Image)(resources.GetObject("UserIcon.Image")));
             this.UserIcon.ImageRotate = 0F;
             this.UserIcon.Location = new System.Drawing.Point(20, 23);
             this.UserIcon.Name = "UserIcon";
@@ -312,7 +313,7 @@
             this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContainerPanel.Location = new System.Drawing.Point(129, 0);
             this.ContainerPanel.Name = "ContainerPanel";
-            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1102);
+            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1124);
             this.ContainerPanel.TabIndex = 2;
             // 
             // panel2
@@ -377,7 +378,7 @@
             // frmLayout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1865, 1102);
+            this.ClientSize = new System.Drawing.Size(1865, 1124);
             this.Controls.Add(this.ContainerPanel);
             this.Controls.Add(this.guna2GradientPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

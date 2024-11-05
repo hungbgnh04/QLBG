@@ -83,26 +83,6 @@ namespace QLBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GX004 {
-            get {
-                object obj = ResourceManager.GetObject("GX004", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ic_user {
-            get {
-                object obj = ResourceManager.GetObject("ic_user", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_bill_black_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8_bill_black_30", resourceCulture);
@@ -146,16 +126,6 @@ namespace QLBG.Properties {
         internal static System.Drawing.Bitmap icons8_capital_52px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_capital_52px_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_code_30 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-code-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,16 +193,6 @@ namespace QLBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_email_30__1_ {
-            get {
-                object obj = ResourceManager.GetObject("icons8-email-30 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_employee_black_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8_employee_black_50", resourceCulture);
@@ -293,26 +253,6 @@ namespace QLBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_password_30 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-password-30", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_password_301 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-password-301", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_product_black50 {
             get {
                 object obj = ResourceManager.GetObject("icons8_product_black50", resourceCulture);
@@ -353,16 +293,6 @@ namespace QLBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap kenshi_Yonezu {
-            get {
-                object obj = ResourceManager.GetObject("kenshi_Yonezu", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap laptop {
             get {
                 object obj = ResourceManager.GetObject("laptop", resourceCulture);
@@ -383,39 +313,9 @@ namespace QLBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap office_chair_icon_4 {
-            get {
-                object obj = ResourceManager.GetObject("office-chair-icon-4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Picture1 {
             get {
                 object obj = ResourceManager.GetObject("Picture1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap plastic_chair_clipart {
-            get {
-                object obj = ResourceManager.GetObject("plastic-chair-clipart", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap plastic_chair_clipart1 {
-            get {
-                object obj = ResourceManager.GetObject("plastic-chair-clipart1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
