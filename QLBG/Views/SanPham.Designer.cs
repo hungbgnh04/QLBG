@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
-            this.pgHoaDonBan = new System.Windows.Forms.TabPage();
-            this.pgHoaDonNhap = new System.Windows.Forms.TabPage();
+            this.pgSanPham = new System.Windows.Forms.TabPage();
+            this.NhNhaCC = new System.Windows.Forms.TabPage();
             this.guna2TabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2TabControl1
             // 
-            this.guna2TabControl1.Controls.Add(this.pgHoaDonBan);
-            this.guna2TabControl1.Controls.Add(this.pgHoaDonNhap);
+            this.guna2TabControl1.Controls.Add(this.pgSanPham);
+            this.guna2TabControl1.Controls.Add(this.NhNhaCC);
             this.guna2TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(220, 60);
             this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
@@ -64,25 +64,25 @@
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
-            // pgHoaDonBan
+            // pgSanPham
             // 
-            this.pgHoaDonBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgHoaDonBan.Location = new System.Drawing.Point(4, 64);
-            this.pgHoaDonBan.Name = "pgHoaDonBan";
-            this.pgHoaDonBan.Padding = new System.Windows.Forms.Padding(3);
-            this.pgHoaDonBan.Size = new System.Drawing.Size(1728, 956);
-            this.pgHoaDonBan.TabIndex = 0;
-            this.pgHoaDonBan.Text = "Hóa đơn bán";
+            this.pgSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgSanPham.Location = new System.Drawing.Point(4, 64);
+            this.pgSanPham.Name = "pgSanPham";
+            this.pgSanPham.Padding = new System.Windows.Forms.Padding(3);
+            this.pgSanPham.Size = new System.Drawing.Size(1728, 956);
+            this.pgSanPham.TabIndex = 0;
+            this.pgSanPham.Text = "Sản phẩm";
             // 
-            // pgHoaDonNhap
+            // NhNhaCC
             // 
-            this.pgHoaDonNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgHoaDonNhap.Location = new System.Drawing.Point(4, 64);
-            this.pgHoaDonNhap.Name = "pgHoaDonNhap";
-            this.pgHoaDonNhap.Padding = new System.Windows.Forms.Padding(3);
-            this.pgHoaDonNhap.Size = new System.Drawing.Size(1728, 956);
-            this.pgHoaDonNhap.TabIndex = 1;
-            this.pgHoaDonNhap.Text = "Hóa đơn nhập";
+            this.NhNhaCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.NhNhaCC.Location = new System.Drawing.Point(4, 64);
+            this.NhNhaCC.Name = "NhNhaCC";
+            this.NhNhaCC.Padding = new System.Windows.Forms.Padding(3);
+            this.NhNhaCC.Size = new System.Drawing.Size(1728, 956);
+            this.NhNhaCC.TabIndex = 1;
+            this.NhNhaCC.Text = "Nhà cung cấp";
             // 
             // SanPham
             // 
@@ -100,7 +100,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
-        private System.Windows.Forms.TabPage pgHoaDonBan;
-        private System.Windows.Forms.TabPage pgHoaDonNhap;
+        private System.Windows.Forms.TabPage pgSanPham;
+        private System.Windows.Forms.TabPage NhNhaCC;
     }
 }
