@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheSanPham));
             this.HangLb = new System.Windows.Forms.Label();
             this.TenLb = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PictureBoxAnh = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAnh)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,26 +60,26 @@
             this.TenLb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TenLb.Click += new System.EventHandler(this.TenLb_Click_1);
             // 
-            // guna2PictureBox1
+            // PictureBoxAnh
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(280, 250);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 3;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.TenLb_Click_1);
+            this.PictureBoxAnh.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBoxAnh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PictureBoxAnh.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxAnh.Image")));
+            this.PictureBoxAnh.ImageRotate = 0F;
+            this.PictureBoxAnh.Location = new System.Drawing.Point(0, 0);
+            this.PictureBoxAnh.Name = "PictureBoxAnh";
+            this.PictureBoxAnh.Size = new System.Drawing.Size(280, 250);
+            this.PictureBoxAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBoxAnh.TabIndex = 3;
+            this.PictureBoxAnh.TabStop = false;
+            this.PictureBoxAnh.Click += new System.EventHandler(this.TenLb_Click_1);
             // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.HangLb);
             this.guna2ShadowPanel1.Controls.Add(this.TenLb);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2ShadowPanel1.Controls.Add(this.PictureBoxAnh);
             this.guna2ShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(230)))));
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(0, 0);
@@ -99,7 +99,7 @@
             this.Name = "TheSanPham";
             this.Size = new System.Drawing.Size(280, 400);
             this.Resize += new System.EventHandler(this.TheSanPham_Resize);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAnh)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -108,7 +108,7 @@
         #endregion
         public System.Windows.Forms.Label HangLb;
         public System.Windows.Forms.Label TenLb;//
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox PictureBoxAnh;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
     }
 }
