@@ -35,7 +35,9 @@ namespace QLBG.Views
         {
             guna2DataGridView1.Rows.Add(9);
 
-            string imagePath = Path.Combine(Application.StartupPath, "EmployeeImages", "ic_user.png");
+            string projectDirectory = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+            string imagePath = Path.Combine(projectDirectory, "Resources", "EmployeeImages", "ic_user.png");
+
             if (File.Exists(imagePath))
             {
                 for (int i = 0; i < 9; i++)
@@ -54,5 +56,7 @@ namespace QLBG.Views
                 MessageBox.Show("Không tìm thấy tệp ảnh: " + imagePath, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }
