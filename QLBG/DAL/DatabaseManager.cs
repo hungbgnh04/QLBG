@@ -16,7 +16,7 @@ namespace QLBG.DAL
 
         private DatabaseManager()
         {
-            connectionString = App_Default.DefaultConnectionString;
+            connectionString = App_Default.DefaultConnectionString1;
         }
 
         public static DatabaseManager Instance
@@ -157,5 +157,26 @@ namespace QLBG.DAL
         {
             MessageBox.Show(message, "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        public DataTable ExecuteDataTable(string query, SqlParameter[] parameters)
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    if (parameters != null)
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                    }
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+                }
+            }
+            return dataTable;
+        }
+
     }
 }

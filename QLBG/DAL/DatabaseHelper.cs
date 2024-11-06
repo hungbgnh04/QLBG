@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace QLBG.DAL
@@ -50,9 +47,9 @@ namespace QLBG.DAL
         {
             string query = "UPDATE NhanVien SET Password=@Password WHERE Email=@Email";
             SqlParameter[] parameters = {
-        new SqlParameter("@Password", newPassword),
-        new SqlParameter("@Email", email)
-    };
+                new SqlParameter("@Password", newPassword),
+                new SqlParameter("@Email", email)
+            };
             int rowsAffected = dbManager.ExecuteNonQuery(query, parameters);
             if (rowsAffected > 0)
             {
@@ -66,5 +63,30 @@ namespace QLBG.DAL
             }
         }
 
+        /// <summary>
+        /// Retrieves employee data along with their job titles, excluding Email and Password.
+        /// </summary>
+        public DataTable GetEmployeesWithJob()
+        {
+            string query = @"
+                SELECT 
+                    NV.MaNV,
+                    NV.TenNV,
+                    NV.GioiTinh,
+                    NV.NgaySinh,
+                    NV.DienThoai,
+                    NV.QuyenAdmin,
+                    NV.DiaChi,
+                    NV.Anh,
+                    CV.TenCV
+                FROM 
+                    NhanVien NV
+                INNER JOIN 
+                    CongViec CV ON NV.MaCV = CV.MaCV";
+
+            return dbManager.ExecuteDataTable(query, null);
+        }
+
     }
+
 }

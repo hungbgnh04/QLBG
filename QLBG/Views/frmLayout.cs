@@ -27,7 +27,6 @@ namespace QLBG.Views
         public frmLayout()
         {
             InitializeComponent();
-            ShowFirstCustomerInfo();
 
             homePage = new TrangChu();
             //
@@ -44,65 +43,7 @@ namespace QLBG.Views
 
         private void MenuForm_Load(object sender, EventArgs e)
         {
-            CheckDatabaseConnection();
             HomeBtn_Click(HomeBtn, e);
-        }
-
-        private void CheckDatabaseConnection()
-        {
-            try
-            {
-                // Kiểm tra kết nối bằng cách đếm số dòng trong bảng bất kỳ, ví dụ: bảng KhachHang
-                string query = "SELECT COUNT(*) FROM KhachHang";
-                object result = QLBG.DAL.DatabaseManager.Instance.ExecuteScalar(query);
-
-                if (result != null)
-                {
-                    MessageBox.Show("Kết nối cơ sở dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Kết nối cơ sở dữ liệu thất bại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi kết nối tới cơ sở dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void ShowFirstCustomerInfo()
-        {
-            try
-            {
-                // Truy vấn để lấy thông tin khách hàng đầu tiên
-                string query = "SELECT TenKhach, DiaChi, DienThoai FROM KhachHang WHERE MaKhach = 1";
-                DataTable dataTable = QLBG.DAL.DatabaseManager.Instance.ExecuteQuery(query);
-
-                if (dataTable.Rows.Count > 0)
-                {
-                    // Lấy thông tin khách hàng
-                    string tenKhach = dataTable.Rows[0]["TenKhach"].ToString();
-                    string diaChi = dataTable.Rows[0]["DiaChi"].ToString();
-                    string dienThoai = dataTable.Rows[0]["DienThoai"].ToString();
-
-                    // Hiển thị thông tin trong MessageBox
-                    MessageBox.Show(
-                        $"Thông tin khách hàng:\nTên: {tenKhach}\nĐịa chỉ: {diaChi}\nĐiện thoại: {dienThoai}",
-                        "Thông tin Khách hàng",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
-                    );
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy khách hàng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi lấy thông tin khách hàng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
 
