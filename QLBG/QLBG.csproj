@@ -63,6 +63,9 @@
     <Reference Include="ExcelNumberFormat, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
       <HintPath>..\packages\ExcelNumberFormat.1.1.0\lib\net20\ExcelNumberFormat.dll</HintPath>
     </Reference>
+    <Reference Include="Fkosoft.FontAwesome5, Version=1.37.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fkosoft.FontAwesome5.1.37.0\lib\net40\Fkosoft.FontAwesome5.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.Charts.WinForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.Charts.WinForms.1.1.0\lib\net48\Guna.Charts.WinForms.dll</HintPath>
     </Reference>
