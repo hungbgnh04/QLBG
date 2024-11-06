@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="DAL\DatabaseHelper.cs" />
     <Compile Include="DAL\DatabaseManager.cs" />
+    <Compile Include="Helpers\App_Default.cs" />
     <Compile Include="Views\CustomTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -156,6 +157,7 @@
     <EmbeddedResource Include="Views\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -166,9 +168,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\chair.jpg" />
@@ -277,6 +276,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>QLBG.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\plastic-chair-clipart1.png" />
+    <None Include="Resources\icons8-code-30.png" />
+    <None Include="Resources\icons8-email-30 %281%29.png" />
+    <None Include="Resources\icons8-password-30.png" />
+    <None Include="Resources\icons8-password-301.png" />
+    <None Include="Resources\kenshi_Yonezu.jpeg" />
+    <None Include="Resources\office-chair-icon-4.jpg" />
+    <None Include="Resources\plastic-chair-clipart.png" />
     <Content Include="Resources\ProductImages\default_product.png" />
   </ItemGroup>
   <ItemGroup />

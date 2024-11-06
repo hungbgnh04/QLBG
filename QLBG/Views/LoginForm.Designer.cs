@@ -197,7 +197,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(362, 655);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            //this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // presentedLabel
             // 
@@ -418,7 +418,7 @@
             this.signUpLabel.Size = new System.Drawing.Size(52, 16);
             this.signUpLabel.TabIndex = 16;
             this.signUpLabel.Text = "Sign up";
-            this.signUpLabel.Click += new System.EventHandler(this.label13_Click);
+            //this.signUpLabel.Click += new System.EventHandler(this.label13_Click);
             this.signUpLabel.MouseLeave += new System.EventHandler(this.signUpLabel_MouseLeave_1);
             this.signUpLabel.MouseHover += new System.EventHandler(this.signUpLabel_MouseHover_1);
             this.signUpLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.signUpLabel_MouseMove);
@@ -464,7 +464,7 @@
             this.createNewPassPanel.Name = "createNewPassPanel";
             this.createNewPassPanel.Size = new System.Drawing.Size(804, 649);
             this.createNewPassPanel.TabIndex = 43;
-            this.createNewPassPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.createNewPassPanel_Paint_1);
+            //this.createNewPassPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.createNewPassPanel_Paint_1);
             // 
             // panel21
             // 
@@ -767,10 +767,10 @@
             this.button1.TabIndex = 37;
             this.button1.Text = "Accept";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave_1);
-            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover_1);
-            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
+            //this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            //this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave_1);
+            //this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover_1);
+            //this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // wrongOTPLabel
             // 
