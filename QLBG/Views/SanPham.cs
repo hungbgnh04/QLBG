@@ -135,5 +135,15 @@ namespace QLBG.Views
                 }
             }
         }
+
+        private void dgvLoai_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvCongDung_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
