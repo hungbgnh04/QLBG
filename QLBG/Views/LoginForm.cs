@@ -613,17 +613,17 @@ namespace QLBG.Views
 
         private void btnAcceptCheckOTP_MouseHover(object sender, EventArgs e)
         {
-            //btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Black;
+            btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Black;
         }
 
         private void btnAcceptCheckOTP_MouseLeave(object sender, EventArgs e)
         {
-            //btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Lime;
+            btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Lime;
         }
 
         private void btnAcceptCheckOTP_MouseMove(object sender, MouseEventArgs e)
         {
-            //btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Black;
+            btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Black;
         }
 
         private void btnAcceptCheckOTP_Click(object sender, EventArgs e)

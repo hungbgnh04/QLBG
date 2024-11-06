@@ -70,14 +70,14 @@
             this.panel28 = new System.Windows.Forms.Panel();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.headingCreateNewPass = new System.Windows.Forms.Label();
             this.OTPVerifyPanel = new System.Windows.Forms.Panel();
+            this.btnAcceptCheckOTP = new System.Windows.Forms.Button();
             this.btnCountDown = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btnOTP = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.wrongOTPLabel = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
@@ -197,7 +197,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(362, 655);
             this.panel2.TabIndex = 1;
-            //this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // presentedLabel
             // 
@@ -229,9 +228,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(89, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 28);
+            this.label3.Size = new System.Drawing.Size(197, 28);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Quản lý bàn ghế";
+            this.label3.Text = "Quản lý đồ nội thất";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
@@ -241,9 +240,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(163, 203);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 22);
+            this.label1.Size = new System.Drawing.Size(54, 22);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Username";
+            this.label1.Text = "Email";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel5
@@ -410,18 +409,10 @@
             // 
             // signUpLabel
             // 
-            this.signUpLabel.AutoSize = true;
-            this.signUpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.signUpLabel.ForeColor = System.Drawing.Color.White;
-            this.signUpLabel.Location = new System.Drawing.Point(394, 477);
+            this.signUpLabel.Location = new System.Drawing.Point(0, 0);
             this.signUpLabel.Name = "signUpLabel";
-            this.signUpLabel.Size = new System.Drawing.Size(52, 16);
-            this.signUpLabel.TabIndex = 16;
-            this.signUpLabel.Text = "Sign up";
-            //this.signUpLabel.Click += new System.EventHandler(this.label13_Click);
-            this.signUpLabel.MouseLeave += new System.EventHandler(this.signUpLabel_MouseLeave_1);
-            this.signUpLabel.MouseHover += new System.EventHandler(this.signUpLabel_MouseHover_1);
-            this.signUpLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.signUpLabel_MouseMove);
+            this.signUpLabel.Size = new System.Drawing.Size(100, 23);
+            this.signUpLabel.TabIndex = 43;
             // 
             // panel3
             // 
@@ -459,12 +450,11 @@
             this.createNewPassPanel.Controls.Add(this.pictureBox12);
             this.createNewPassPanel.Controls.Add(this.panel25);
             this.createNewPassPanel.Controls.Add(this.label23);
-            this.createNewPassPanel.Controls.Add(this.label28);
-            this.createNewPassPanel.Location = new System.Drawing.Point(40, 97);
+            this.createNewPassPanel.Controls.Add(this.headingCreateNewPass);
+            this.createNewPassPanel.Location = new System.Drawing.Point(9, 35);
             this.createNewPassPanel.Name = "createNewPassPanel";
             this.createNewPassPanel.Size = new System.Drawing.Size(804, 649);
             this.createNewPassPanel.TabIndex = 43;
-            //this.createNewPassPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.createNewPassPanel_Paint_1);
             // 
             // panel21
             // 
@@ -555,7 +545,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(408, 490);
+            this.label18.Location = new System.Drawing.Point(411, 489);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(38, 16);
             this.label18.TabIndex = 22;
@@ -572,7 +562,7 @@
             this.btnUpdatePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdatePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnUpdatePass.ForeColor = System.Drawing.Color.Lime;
-            this.btnUpdatePass.Location = new System.Drawing.Point(304, 531);
+            this.btnUpdatePass.Location = new System.Drawing.Point(300, 528);
             this.btnUpdatePass.Name = "btnUpdatePass";
             this.btnUpdatePass.Size = new System.Drawing.Size(251, 61);
             this.btnUpdatePass.TabIndex = 21;
@@ -662,35 +652,53 @@
             this.label23.TabIndex = 17;
             this.label23.Text = "Password";
             // 
-            // label28
+            // headingCreateNewPass
             // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.label28.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(279, 34);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(288, 38);
-            this.label28.TabIndex = 7;
-            this.label28.Text = "Create new password";
-            this.label28.Click += new System.EventHandler(this.label28_Click);
+            this.headingCreateNewPass.AutoSize = true;
+            this.headingCreateNewPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.headingCreateNewPass.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headingCreateNewPass.ForeColor = System.Drawing.Color.White;
+            this.headingCreateNewPass.Location = new System.Drawing.Point(279, 34);
+            this.headingCreateNewPass.Name = "headingCreateNewPass";
+            this.headingCreateNewPass.Size = new System.Drawing.Size(288, 38);
+            this.headingCreateNewPass.TabIndex = 7;
+            this.headingCreateNewPass.Text = "Create new password";
+            this.headingCreateNewPass.Click += new System.EventHandler(this.label28_Click);
             // 
             // OTPVerifyPanel
             // 
+            this.OTPVerifyPanel.Controls.Add(this.btnAcceptCheckOTP);
             this.OTPVerifyPanel.Controls.Add(this.btnCountDown);
             this.OTPVerifyPanel.Controls.Add(this.panel16);
             this.OTPVerifyPanel.Controls.Add(this.btnOTP);
             this.OTPVerifyPanel.Controls.Add(this.label16);
-            this.OTPVerifyPanel.Controls.Add(this.button1);
             this.OTPVerifyPanel.Controls.Add(this.wrongOTPLabel);
             this.OTPVerifyPanel.Controls.Add(this.pictureBox11);
             this.OTPVerifyPanel.Controls.Add(this.panel22);
             this.OTPVerifyPanel.Controls.Add(this.label21);
             this.OTPVerifyPanel.Controls.Add(this.label22);
-            this.OTPVerifyPanel.Location = new System.Drawing.Point(20, 172);
+            this.OTPVerifyPanel.Location = new System.Drawing.Point(6, 93);
             this.OTPVerifyPanel.Name = "OTPVerifyPanel";
             this.OTPVerifyPanel.Size = new System.Drawing.Size(821, 652);
             this.OTPVerifyPanel.TabIndex = 30;
+            // 
+            // btnAcceptCheckOTP
+            // 
+            this.btnAcceptCheckOTP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.btnAcceptCheckOTP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btnAcceptCheckOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcceptCheckOTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Lime;
+            this.btnAcceptCheckOTP.Location = new System.Drawing.Point(293, 530);
+            this.btnAcceptCheckOTP.Name = "btnAcceptCheckOTP";
+            this.btnAcceptCheckOTP.Size = new System.Drawing.Size(251, 61);
+            this.btnAcceptCheckOTP.TabIndex = 37;
+            this.btnAcceptCheckOTP.Text = "Accept";
+            this.btnAcceptCheckOTP.UseVisualStyleBackColor = true;
+            this.btnAcceptCheckOTP.Click += new System.EventHandler(this.btnAcceptCheckOTP_Click);
+            this.btnAcceptCheckOTP.MouseLeave += new System.EventHandler(this.btnAcceptCheckOTP_MouseLeave);
+            this.btnAcceptCheckOTP.MouseHover += new System.EventHandler(this.btnAcceptCheckOTP_MouseHover);
+            this.btnAcceptCheckOTP.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnAcceptCheckOTP_MouseMove);
             // 
             // btnCountDown
             // 
@@ -753,24 +761,6 @@
             this.label16.MouseLeave += new System.EventHandler(this.label16_MouseLeave);
             this.label16.MouseHover += new System.EventHandler(this.label16_MouseHover);
             this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(293, 530);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 61);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Accept";
-            this.button1.UseVisualStyleBackColor = true;
-            //this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            //this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave_1);
-            //this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover_1);
-            //this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // wrongOTPLabel
             // 
@@ -869,7 +859,7 @@
             this.pnlForgotPassword.Controls.Add(this.btnGetPass);
             this.pnlForgotPassword.Controls.Add(this.emailNotFound);
             this.pnlForgotPassword.Controls.Add(this.headingForgotPass);
-            this.pnlForgotPassword.Location = new System.Drawing.Point(60, 42);
+            this.pnlForgotPassword.Location = new System.Drawing.Point(22, 17);
             this.pnlForgotPassword.Name = "pnlForgotPassword";
             this.pnlForgotPassword.Size = new System.Drawing.Size(824, 654);
             this.pnlForgotPassword.TabIndex = 42;
@@ -1032,6 +1022,7 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.Image = global::QLBG.Properties.Resources.icons8_password_30;
             this.pictureBox8.Location = new System.Drawing.Point(69, 316);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(35, 35);
@@ -1042,6 +1033,7 @@
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.White;
+            this.pictureBox12.Image = global::QLBG.Properties.Resources.icons8_password_30;
             this.pictureBox12.Location = new System.Drawing.Point(69, 228);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(35, 35);
@@ -1052,6 +1044,7 @@
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.White;
+            this.pictureBox11.Image = global::QLBG.Properties.Resources.icons8_code_30;
             this.pictureBox11.Location = new System.Drawing.Point(85, 315);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(35, 35);
@@ -1062,6 +1055,7 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.White;
+            this.pictureBox10.Image = global::QLBG.Properties.Resources.icons8_email_30__1_;
             this.pictureBox10.Location = new System.Drawing.Point(108, 278);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(35, 35);
@@ -1072,6 +1066,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::QLBG.Properties.Resources.icons8_password_301;
             this.pictureBox2.Location = new System.Drawing.Point(122, 279);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 35);
@@ -1082,6 +1077,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::QLBG.Properties.Resources.icons8_email_30__1_;
             this.pictureBox1.Location = new System.Drawing.Point(122, 194);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 35);
@@ -1091,10 +1087,11 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(57, 190);
+            this.pictureBox3.Image = global::QLBG.Properties.Resources.plastic_chair_clipart1;
+            this.pictureBox3.Location = new System.Drawing.Point(48, 183);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(256, 256);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -1195,7 +1192,6 @@
         private System.Windows.Forms.Button btnOTP;
         private System.Windows.Forms.Panel OTPVerifyPanel;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label wrongOTPLabel;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel22;
@@ -1243,7 +1239,7 @@
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label headingCreateNewPass;
+        private System.Windows.Forms.Button btnAcceptCheckOTP;
     }
 }
-
