@@ -13,8 +13,8 @@ namespace QLBG.Helpers
         //    $@"Data Source=DANMINHTRAN\SQLEXPRESS;Initial Catalog=QL;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;";
 
 
-        public static string DefaultConnectionString { get; } =
-            $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data", "QLBG.mdf")};Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;";
+        //public static string DefaultConnectionString { get; } =
+        //    $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data", "QLBG.mdf")};Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;";
 
         public static bool ValidateEmailConfig()
         {

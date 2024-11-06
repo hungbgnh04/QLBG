@@ -15,8 +15,8 @@ namespace QLBG.DAL
 
         private DatabaseManager()
         {
-            connectionString = App_Default.DefaultConnectionString;
-            //connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            //connectionString = App_Default.DefaultConnectionString;
+            connectionString = ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
         }
 
         public static DatabaseManager Instance
