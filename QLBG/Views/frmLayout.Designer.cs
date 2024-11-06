@@ -63,6 +63,7 @@
             this.CloseControl.BackColor = System.Drawing.Color.Transparent;
             this.CloseControl.FillColor = System.Drawing.Color.Transparent;
             this.CloseControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseControl.HoverState.FillColor = System.Drawing.Color.White;
             this.CloseControl.IconColor = System.Drawing.Color.Black;
             this.CloseControl.Location = new System.Drawing.Point(1629, 12);
             this.CloseControl.Name = "CloseControl";
@@ -357,6 +358,7 @@
             this.MinimizeControl.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.MinimizeControl.FillColor = System.Drawing.Color.Transparent;
             this.MinimizeControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimizeControl.HoverState.FillColor = System.Drawing.Color.White;
             this.MinimizeControl.IconColor = System.Drawing.Color.Black;
             this.MinimizeControl.Location = new System.Drawing.Point(1562, 12);
             this.MinimizeControl.Name = "MinimizeControl";
