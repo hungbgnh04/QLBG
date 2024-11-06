@@ -243,8 +243,28 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\ChatLieuDAL.cs" />
+    <Compile Include="DAL\CongDungDAL.cs" />
+    <Compile Include="DAL\DacDiemDAL.cs" />
     <Compile Include="DAL\DatabaseHelper.cs" />
     <Compile Include="DAL\DatabaseManager.cs" />
+    <Compile Include="DAL\HinhDangDAL.cs" />
+    <Compile Include="DAL\KichThuocDAL.cs" />
+    <Compile Include="DAL\LoaiDAL.cs" />
+    <Compile Include="DAL\MauSacDAL.cs" />
+    <Compile Include="DAL\NhaSanXuatDAL.cs" />
+    <Compile Include="DAL\NuocSXDAL.cs" />
+    <Compile Include="DAL\ProductDAL.cs" />
+    <Compile Include="DTO\ChatLieuDTO.cs" />
+    <Compile Include="DTO\CongDungDTO.cs" />
+    <Compile Include="DTO\DacDiemDTO.cs" />
+    <Compile Include="DTO\HinhDangDTO.cs" />
+    <Compile Include="DTO\KichThuocDTO.cs" />
+    <Compile Include="DTO\LoaiDTO.cs" />
+    <Compile Include="DTO\MauSacDTO.cs" />
+    <Compile Include="DTO\NhaSanXuatDTO.cs" />
+    <Compile Include="DTO\NuocSXDTO.cs" />
+    <Compile Include="DTO\ProductDTO.cs" />
     <Compile Include="Helpers\App_Default.cs" />
     <Compile Include="Views\CustomTextBox.cs">
       <SubType>UserControl</SubType>
