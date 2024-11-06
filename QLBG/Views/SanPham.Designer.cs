@@ -85,15 +85,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbChatLieu = new System.Windows.Forms.Label();
             this.dgvChatLieu = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaCL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenCL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pgNhaSX = new System.Windows.Forms.TabPage();
-            this.pgNuocSX = new System.Windows.Forms.TabPage();
-            this.pgKichCo = new System.Windows.Forms.TabPage();
-            this.pgMauSac = new System.Windows.Forms.TabPage();
-            this.pgLoai = new System.Windows.Forms.TabPage();
-            this.pgHinhDang = new System.Windows.Forms.TabPage();
-            this.pgDacDiem = new System.Windows.Forms.TabPage();
-            this.pgCongDung = new System.Windows.Forms.TabPage();
-            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -106,6 +100,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvNhaSX = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaNhaSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNhaSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pgNuocSX = new System.Windows.Forms.TabPage();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -118,6 +115,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dgvNuocSX = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaNuocSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNuocSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pgKichCo = new System.Windows.Forms.TabPage();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
@@ -130,6 +130,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dgvKichCo = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaKichCo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChiTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pgMauSac = new System.Windows.Forms.TabPage();
             this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
@@ -142,6 +145,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dgvMauSac = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaMau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pgLoai = new System.Windows.Forms.TabPage();
             this.guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
@@ -154,6 +160,9 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.dgvLoai = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pgHinhDang = new System.Windows.Forms.TabPage();
             this.guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
@@ -166,6 +175,9 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.dgvHinhDang = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaHinhDang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenHinhDang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pgDacDiem = new System.Windows.Forms.TabPage();
             this.guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button19 = new Guna.UI2.WinForms.Guna2Button();
@@ -178,6 +190,9 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.guna2DataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaDacDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDacDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pgCongDung = new System.Windows.Forms.TabPage();
             this.guna2ShadowPanel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button22 = new Guna.UI2.WinForms.Guna2Button();
@@ -190,24 +205,9 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.dgvCongDung = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.MaCL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNhaSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNhaSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNuocSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNuocSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKichCo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChiTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaMau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaHinhDang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenHinhDang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaDacDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDacDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaCongDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenCongDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.guna2TabControl1.SuspendLayout();
             this.pgSanPham.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -216,34 +216,34 @@
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChatLieu)).BeginInit();
             this.pgNhaSX.SuspendLayout();
-            this.pgNuocSX.SuspendLayout();
-            this.pgKichCo.SuspendLayout();
-            this.pgMauSac.SuspendLayout();
-            this.pgLoai.SuspendLayout();
-            this.pgHinhDang.SuspendLayout();
-            this.pgDacDiem.SuspendLayout();
-            this.pgCongDung.SuspendLayout();
             this.guna2ShadowPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaSX)).BeginInit();
+            this.pgNuocSX.SuspendLayout();
             this.guna2ShadowPanel3.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNuocSX)).BeginInit();
+            this.pgKichCo.SuspendLayout();
             this.guna2ShadowPanel4.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKichCo)).BeginInit();
+            this.pgMauSac.SuspendLayout();
             this.guna2ShadowPanel5.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMauSac)).BeginInit();
+            this.pgLoai.SuspendLayout();
             this.guna2ShadowPanel6.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoai)).BeginInit();
+            this.pgHinhDang.SuspendLayout();
             this.guna2ShadowPanel7.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHinhDang)).BeginInit();
+            this.pgDacDiem.SuspendLayout();
             this.guna2ShadowPanel8.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
+            this.pgCongDung.SuspendLayout();
             this.guna2ShadowPanel9.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCongDung)).BeginInit();
@@ -420,7 +420,7 @@
             this.guna2ShadowPanel1.Controls.Add(this.guna2Panel1);
             this.guna2ShadowPanel1.Controls.Add(this.dgvChatLieu);
             this.guna2ShadowPanel1.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(44, 22);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(50, 31);
             this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 20;
@@ -652,6 +652,20 @@
             this.dgvChatLieu.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvChatLieu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
             // 
+            // MaCL
+            // 
+            this.MaCL.HeaderText = "Mã chất liệu";
+            this.MaCL.MinimumWidth = 8;
+            this.MaCL.Name = "MaCL";
+            this.MaCL.ReadOnly = true;
+            // 
+            // TenCL
+            // 
+            this.TenCL.HeaderText = "Tên chất liệu";
+            this.TenCL.MinimumWidth = 8;
+            this.TenCL.Name = "TenCL";
+            this.TenCL.ReadOnly = true;
+            // 
             // pgNhaSX
             // 
             this.pgNhaSX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
@@ -662,97 +676,6 @@
             this.pgNhaSX.Size = new System.Drawing.Size(1728, 956);
             this.pgNhaSX.TabIndex = 2;
             this.pgNhaSX.Text = "Nhà sản xuất";
-            // 
-            // pgNuocSX
-            // 
-            this.pgNuocSX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgNuocSX.Controls.Add(this.guna2ShadowPanel3);
-            this.pgNuocSX.Location = new System.Drawing.Point(4, 64);
-            this.pgNuocSX.Name = "pgNuocSX";
-            this.pgNuocSX.Padding = new System.Windows.Forms.Padding(3);
-            this.pgNuocSX.Size = new System.Drawing.Size(1728, 956);
-            this.pgNuocSX.TabIndex = 3;
-            this.pgNuocSX.Text = "Nước sản xuất";
-            // 
-            // pgKichCo
-            // 
-            this.pgKichCo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgKichCo.Controls.Add(this.guna2ShadowPanel4);
-            this.pgKichCo.Location = new System.Drawing.Point(4, 64);
-            this.pgKichCo.Name = "pgKichCo";
-            this.pgKichCo.Padding = new System.Windows.Forms.Padding(3);
-            this.pgKichCo.Size = new System.Drawing.Size(1728, 956);
-            this.pgKichCo.TabIndex = 4;
-            this.pgKichCo.Text = "Kích cỡ";
-            // 
-            // pgMauSac
-            // 
-            this.pgMauSac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgMauSac.Controls.Add(this.guna2ShadowPanel5);
-            this.pgMauSac.Location = new System.Drawing.Point(4, 64);
-            this.pgMauSac.Name = "pgMauSac";
-            this.pgMauSac.Padding = new System.Windows.Forms.Padding(3);
-            this.pgMauSac.Size = new System.Drawing.Size(1728, 956);
-            this.pgMauSac.TabIndex = 5;
-            this.pgMauSac.Text = "Màu sắc";
-            // 
-            // pgLoai
-            // 
-            this.pgLoai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgLoai.Controls.Add(this.guna2ShadowPanel6);
-            this.pgLoai.Location = new System.Drawing.Point(4, 64);
-            this.pgLoai.Name = "pgLoai";
-            this.pgLoai.Padding = new System.Windows.Forms.Padding(3);
-            this.pgLoai.Size = new System.Drawing.Size(1728, 956);
-            this.pgLoai.TabIndex = 6;
-            this.pgLoai.Text = "Loại";
-            // 
-            // pgHinhDang
-            // 
-            this.pgHinhDang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgHinhDang.Controls.Add(this.guna2ShadowPanel7);
-            this.pgHinhDang.Location = new System.Drawing.Point(4, 64);
-            this.pgHinhDang.Name = "pgHinhDang";
-            this.pgHinhDang.Size = new System.Drawing.Size(1728, 956);
-            this.pgHinhDang.TabIndex = 7;
-            this.pgHinhDang.Text = "Hình dạng";
-            // 
-            // pgDacDiem
-            // 
-            this.pgDacDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgDacDiem.Controls.Add(this.guna2ShadowPanel8);
-            this.pgDacDiem.Location = new System.Drawing.Point(4, 64);
-            this.pgDacDiem.Name = "pgDacDiem";
-            this.pgDacDiem.Padding = new System.Windows.Forms.Padding(3);
-            this.pgDacDiem.Size = new System.Drawing.Size(1728, 956);
-            this.pgDacDiem.TabIndex = 8;
-            this.pgDacDiem.Text = "Đặc điểm";
-            // 
-            // pgCongDung
-            // 
-            this.pgCongDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.pgCongDung.Controls.Add(this.guna2ShadowPanel9);
-            this.pgCongDung.Location = new System.Drawing.Point(4, 64);
-            this.pgCongDung.Name = "pgCongDung";
-            this.pgCongDung.Padding = new System.Windows.Forms.Padding(3);
-            this.pgCongDung.Size = new System.Drawing.Size(1728, 956);
-            this.pgCongDung.TabIndex = 9;
-            this.pgCongDung.Text = "Công dụng";
-            // 
-            // guna2ContextMenuStrip1
-            // 
-            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
-            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // guna2ShadowPanel2
             // 
@@ -992,6 +915,31 @@
             this.dgvNhaSX.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvNhaSX.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNuocSX_CellContentClick);
             // 
+            // MaNhaSX
+            // 
+            this.MaNhaSX.HeaderText = "Mã nhà sản xuất";
+            this.MaNhaSX.MinimumWidth = 8;
+            this.MaNhaSX.Name = "MaNhaSX";
+            this.MaNhaSX.ReadOnly = true;
+            // 
+            // TenNhaSX
+            // 
+            this.TenNhaSX.HeaderText = "Tên nhà sản xuất";
+            this.TenNhaSX.MinimumWidth = 8;
+            this.TenNhaSX.Name = "TenNhaSX";
+            this.TenNhaSX.ReadOnly = true;
+            // 
+            // pgNuocSX
+            // 
+            this.pgNuocSX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgNuocSX.Controls.Add(this.guna2ShadowPanel3);
+            this.pgNuocSX.Location = new System.Drawing.Point(4, 64);
+            this.pgNuocSX.Name = "pgNuocSX";
+            this.pgNuocSX.Padding = new System.Windows.Forms.Padding(3);
+            this.pgNuocSX.Size = new System.Drawing.Size(1728, 956);
+            this.pgNuocSX.TabIndex = 3;
+            this.pgNuocSX.Text = "Nước sản xuất";
+            // 
             // guna2ShadowPanel3
             // 
             this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
@@ -1229,6 +1177,31 @@
             this.dgvNuocSX.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.dgvNuocSX.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvNuocSX.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
+            // 
+            // MaNuocSX
+            // 
+            this.MaNuocSX.HeaderText = "Mã nước sản xuất";
+            this.MaNuocSX.MinimumWidth = 8;
+            this.MaNuocSX.Name = "MaNuocSX";
+            this.MaNuocSX.ReadOnly = true;
+            // 
+            // TenNuocSX
+            // 
+            this.TenNuocSX.HeaderText = "Tên nước sản xuất";
+            this.TenNuocSX.MinimumWidth = 8;
+            this.TenNuocSX.Name = "TenNuocSX";
+            this.TenNuocSX.ReadOnly = true;
+            // 
+            // pgKichCo
+            // 
+            this.pgKichCo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgKichCo.Controls.Add(this.guna2ShadowPanel4);
+            this.pgKichCo.Location = new System.Drawing.Point(4, 64);
+            this.pgKichCo.Name = "pgKichCo";
+            this.pgKichCo.Padding = new System.Windows.Forms.Padding(3);
+            this.pgKichCo.Size = new System.Drawing.Size(1728, 956);
+            this.pgKichCo.TabIndex = 4;
+            this.pgKichCo.Text = "Kích cỡ";
             // 
             // guna2ShadowPanel4
             // 
@@ -1468,6 +1441,31 @@
             this.dgvKichCo.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvKichCo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
             // 
+            // MaKichCo
+            // 
+            this.MaKichCo.HeaderText = "Mã kích cỡ";
+            this.MaKichCo.MinimumWidth = 8;
+            this.MaKichCo.Name = "MaKichCo";
+            this.MaKichCo.ReadOnly = true;
+            // 
+            // ChiTiet
+            // 
+            this.ChiTiet.HeaderText = "Chi tiết";
+            this.ChiTiet.MinimumWidth = 8;
+            this.ChiTiet.Name = "ChiTiet";
+            this.ChiTiet.ReadOnly = true;
+            // 
+            // pgMauSac
+            // 
+            this.pgMauSac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgMauSac.Controls.Add(this.guna2ShadowPanel5);
+            this.pgMauSac.Location = new System.Drawing.Point(4, 64);
+            this.pgMauSac.Name = "pgMauSac";
+            this.pgMauSac.Padding = new System.Windows.Forms.Padding(3);
+            this.pgMauSac.Size = new System.Drawing.Size(1728, 956);
+            this.pgMauSac.TabIndex = 5;
+            this.pgMauSac.Text = "Màu sắc";
+            // 
             // guna2ShadowPanel5
             // 
             this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
@@ -1705,6 +1703,31 @@
             this.dgvMauSac.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.dgvMauSac.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvMauSac.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
+            // 
+            // MaMau
+            // 
+            this.MaMau.HeaderText = "Mã màu";
+            this.MaMau.MinimumWidth = 8;
+            this.MaMau.Name = "MaMau";
+            this.MaMau.ReadOnly = true;
+            // 
+            // TenMau
+            // 
+            this.TenMau.HeaderText = "Tên màu";
+            this.TenMau.MinimumWidth = 8;
+            this.TenMau.Name = "TenMau";
+            this.TenMau.ReadOnly = true;
+            // 
+            // pgLoai
+            // 
+            this.pgLoai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgLoai.Controls.Add(this.guna2ShadowPanel6);
+            this.pgLoai.Location = new System.Drawing.Point(4, 64);
+            this.pgLoai.Name = "pgLoai";
+            this.pgLoai.Padding = new System.Windows.Forms.Padding(3);
+            this.pgLoai.Size = new System.Drawing.Size(1728, 956);
+            this.pgLoai.TabIndex = 6;
+            this.pgLoai.Text = "Loại";
             // 
             // guna2ShadowPanel6
             // 
@@ -1945,6 +1968,30 @@
             this.dgvLoai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
             this.dgvLoai.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoai_CellContentClick);
             // 
+            // MaLoai
+            // 
+            this.MaLoai.HeaderText = "Mã loại";
+            this.MaLoai.MinimumWidth = 8;
+            this.MaLoai.Name = "MaLoai";
+            this.MaLoai.ReadOnly = true;
+            // 
+            // TenLoai
+            // 
+            this.TenLoai.HeaderText = "Tên loại";
+            this.TenLoai.MinimumWidth = 8;
+            this.TenLoai.Name = "TenLoai";
+            this.TenLoai.ReadOnly = true;
+            // 
+            // pgHinhDang
+            // 
+            this.pgHinhDang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgHinhDang.Controls.Add(this.guna2ShadowPanel7);
+            this.pgHinhDang.Location = new System.Drawing.Point(4, 64);
+            this.pgHinhDang.Name = "pgHinhDang";
+            this.pgHinhDang.Size = new System.Drawing.Size(1728, 956);
+            this.pgHinhDang.TabIndex = 7;
+            this.pgHinhDang.Text = "Hình dạng";
+            // 
             // guna2ShadowPanel7
             // 
             this.guna2ShadowPanel7.BackColor = System.Drawing.Color.Transparent;
@@ -2183,6 +2230,31 @@
             this.dgvHinhDang.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvHinhDang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
             // 
+            // MaHinhDang
+            // 
+            this.MaHinhDang.HeaderText = "Mã hình dạng";
+            this.MaHinhDang.MinimumWidth = 8;
+            this.MaHinhDang.Name = "MaHinhDang";
+            this.MaHinhDang.ReadOnly = true;
+            // 
+            // TenHinhDang
+            // 
+            this.TenHinhDang.HeaderText = "Tên hình dạng";
+            this.TenHinhDang.MinimumWidth = 8;
+            this.TenHinhDang.Name = "TenHinhDang";
+            this.TenHinhDang.ReadOnly = true;
+            // 
+            // pgDacDiem
+            // 
+            this.pgDacDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgDacDiem.Controls.Add(this.guna2ShadowPanel8);
+            this.pgDacDiem.Location = new System.Drawing.Point(4, 64);
+            this.pgDacDiem.Name = "pgDacDiem";
+            this.pgDacDiem.Padding = new System.Windows.Forms.Padding(3);
+            this.pgDacDiem.Size = new System.Drawing.Size(1728, 956);
+            this.pgDacDiem.TabIndex = 8;
+            this.pgDacDiem.Text = "Đặc điểm";
+            // 
             // guna2ShadowPanel8
             // 
             this.guna2ShadowPanel8.BackColor = System.Drawing.Color.Transparent;
@@ -2420,6 +2492,31 @@
             this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2DataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
+            // 
+            // MaDacDiem
+            // 
+            this.MaDacDiem.HeaderText = "Mã đặc điểm";
+            this.MaDacDiem.MinimumWidth = 8;
+            this.MaDacDiem.Name = "MaDacDiem";
+            this.MaDacDiem.ReadOnly = true;
+            // 
+            // TenDacDiem
+            // 
+            this.TenDacDiem.HeaderText = "Tên đặc điểm";
+            this.TenDacDiem.MinimumWidth = 8;
+            this.TenDacDiem.Name = "TenDacDiem";
+            this.TenDacDiem.ReadOnly = true;
+            // 
+            // pgCongDung
+            // 
+            this.pgCongDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.pgCongDung.Controls.Add(this.guna2ShadowPanel9);
+            this.pgCongDung.Location = new System.Drawing.Point(4, 64);
+            this.pgCongDung.Name = "pgCongDung";
+            this.pgCongDung.Padding = new System.Windows.Forms.Padding(3);
+            this.pgCongDung.Size = new System.Drawing.Size(1728, 956);
+            this.pgCongDung.TabIndex = 9;
+            this.pgCongDung.Text = "Công dụng";
             // 
             // guna2ShadowPanel9
             // 
@@ -2660,118 +2757,6 @@
             this.dgvCongDung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCellClick);
             this.dgvCongDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCongDung_CellContentClick);
             // 
-            // MaCL
-            // 
-            this.MaCL.HeaderText = "Mã chất liệu";
-            this.MaCL.MinimumWidth = 8;
-            this.MaCL.Name = "MaCL";
-            this.MaCL.ReadOnly = true;
-            // 
-            // TenCL
-            // 
-            this.TenCL.HeaderText = "Tên chất liệu";
-            this.TenCL.MinimumWidth = 8;
-            this.TenCL.Name = "TenCL";
-            this.TenCL.ReadOnly = true;
-            // 
-            // MaNhaSX
-            // 
-            this.MaNhaSX.HeaderText = "Mã nhà sản xuất";
-            this.MaNhaSX.MinimumWidth = 8;
-            this.MaNhaSX.Name = "MaNhaSX";
-            this.MaNhaSX.ReadOnly = true;
-            // 
-            // TenNhaSX
-            // 
-            this.TenNhaSX.HeaderText = "Tên nhà sản xuất";
-            this.TenNhaSX.MinimumWidth = 8;
-            this.TenNhaSX.Name = "TenNhaSX";
-            this.TenNhaSX.ReadOnly = true;
-            // 
-            // MaNuocSX
-            // 
-            this.MaNuocSX.HeaderText = "Mã nước sản xuất";
-            this.MaNuocSX.MinimumWidth = 8;
-            this.MaNuocSX.Name = "MaNuocSX";
-            this.MaNuocSX.ReadOnly = true;
-            // 
-            // TenNuocSX
-            // 
-            this.TenNuocSX.HeaderText = "Tên nước sản xuất";
-            this.TenNuocSX.MinimumWidth = 8;
-            this.TenNuocSX.Name = "TenNuocSX";
-            this.TenNuocSX.ReadOnly = true;
-            // 
-            // MaKichCo
-            // 
-            this.MaKichCo.HeaderText = "Mã kích cỡ";
-            this.MaKichCo.MinimumWidth = 8;
-            this.MaKichCo.Name = "MaKichCo";
-            this.MaKichCo.ReadOnly = true;
-            // 
-            // ChiTiet
-            // 
-            this.ChiTiet.HeaderText = "Chi tiết";
-            this.ChiTiet.MinimumWidth = 8;
-            this.ChiTiet.Name = "ChiTiet";
-            this.ChiTiet.ReadOnly = true;
-            // 
-            // MaMau
-            // 
-            this.MaMau.HeaderText = "Mã màu";
-            this.MaMau.MinimumWidth = 8;
-            this.MaMau.Name = "MaMau";
-            this.MaMau.ReadOnly = true;
-            // 
-            // TenMau
-            // 
-            this.TenMau.HeaderText = "Tên màu";
-            this.TenMau.MinimumWidth = 8;
-            this.TenMau.Name = "TenMau";
-            this.TenMau.ReadOnly = true;
-            // 
-            // MaLoai
-            // 
-            this.MaLoai.HeaderText = "Mã loại";
-            this.MaLoai.MinimumWidth = 8;
-            this.MaLoai.Name = "MaLoai";
-            this.MaLoai.ReadOnly = true;
-            // 
-            // TenLoai
-            // 
-            this.TenLoai.HeaderText = "Tên loại";
-            this.TenLoai.MinimumWidth = 8;
-            this.TenLoai.Name = "TenLoai";
-            this.TenLoai.ReadOnly = true;
-            // 
-            // MaHinhDang
-            // 
-            this.MaHinhDang.HeaderText = "Mã hình dạng";
-            this.MaHinhDang.MinimumWidth = 8;
-            this.MaHinhDang.Name = "MaHinhDang";
-            this.MaHinhDang.ReadOnly = true;
-            // 
-            // TenHinhDang
-            // 
-            this.TenHinhDang.HeaderText = "Tên hình dạng";
-            this.TenHinhDang.MinimumWidth = 8;
-            this.TenHinhDang.Name = "TenHinhDang";
-            this.TenHinhDang.ReadOnly = true;
-            // 
-            // MaDacDiem
-            // 
-            this.MaDacDiem.HeaderText = "Mã đặc điểm";
-            this.MaDacDiem.MinimumWidth = 8;
-            this.MaDacDiem.Name = "MaDacDiem";
-            this.MaDacDiem.ReadOnly = true;
-            // 
-            // TenDacDiem
-            // 
-            this.TenDacDiem.HeaderText = "Tên đặc điểm";
-            this.TenDacDiem.MinimumWidth = 8;
-            this.TenDacDiem.Name = "TenDacDiem";
-            this.TenDacDiem.ReadOnly = true;
-            // 
             // MaCongDung
             // 
             this.MaCongDung.HeaderText = "Mã công dụng";
@@ -2785,6 +2770,21 @@
             this.TenCongDung.MinimumWidth = 8;
             this.TenCongDung.Name = "TenCongDung";
             this.TenCongDung.ReadOnly = true;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // SanPham
             // 
@@ -2803,41 +2803,41 @@
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChatLieu)).EndInit();
             this.pgNhaSX.ResumeLayout(false);
-            this.pgNuocSX.ResumeLayout(false);
-            this.pgKichCo.ResumeLayout(false);
-            this.pgMauSac.ResumeLayout(false);
-            this.pgLoai.ResumeLayout(false);
-            this.pgHinhDang.ResumeLayout(false);
-            this.pgDacDiem.ResumeLayout(false);
-            this.pgCongDung.ResumeLayout(false);
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaSX)).EndInit();
+            this.pgNuocSX.ResumeLayout(false);
             this.guna2ShadowPanel3.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNuocSX)).EndInit();
+            this.pgKichCo.ResumeLayout(false);
             this.guna2ShadowPanel4.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKichCo)).EndInit();
+            this.pgMauSac.ResumeLayout(false);
             this.guna2ShadowPanel5.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMauSac)).EndInit();
+            this.pgLoai.ResumeLayout(false);
             this.guna2ShadowPanel6.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoai)).EndInit();
+            this.pgHinhDang.ResumeLayout(false);
             this.guna2ShadowPanel7.ResumeLayout(false);
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHinhDang)).EndInit();
+            this.pgDacDiem.ResumeLayout(false);
             this.guna2ShadowPanel8.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).EndInit();
+            this.pgCongDung.ResumeLayout(false);
             this.guna2ShadowPanel9.ResumeLayout(false);
             this.guna2Panel9.ResumeLayout(false);
             this.guna2Panel9.PerformLayout();
