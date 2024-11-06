@@ -437,7 +437,7 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label MonthInvoiceLb;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label8;//
         private System.Windows.Forms.Label BillTodayLb;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label ProductLb;

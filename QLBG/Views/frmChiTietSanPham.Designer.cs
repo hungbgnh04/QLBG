@@ -32,10 +32,32 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChiTietSanPham));
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.ThemPanel = new System.Windows.Forms.Panel();
+            this.ThemBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.ThoatBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.SuaPanel = new System.Windows.Forms.Panel();
+            this.LuuBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.HuyBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.ViewPanel = new System.Windows.Forms.Panel();
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQuayLai = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHuy = new Guna.UI2.WinForms.Guna2Button();
+            this.ThongTinPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.comboBoxDacDiem = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxHinhDang = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxNhaSanXuat = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxLoaiSP = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxNuocSanXuat = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxMau = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxCongDung = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxChatLieu = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxKichThuoc = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtDonGiaNhap = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSoLuong = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtThoiGianBaoHanh = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDonGiaBan = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTenHangHoa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtGhiChu = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCongDung = new QLBG.Views.CustomTextBox();
             this.txtBaoHanh = new QLBG.Views.CustomTextBox();
@@ -68,12 +90,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbMa = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PictureBoxAnh = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.HeaderLb = new System.Windows.Forms.Label();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.ThemPanel.SuspendLayout();
+            this.SuaPanel.SuspendLayout();
+            this.ViewPanel.SuspendLayout();
+            this.ThongTinPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowForm1
@@ -82,13 +108,100 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Controls.Add(this.btnXoa);
-            this.guna2Panel2.Controls.Add(this.btnSua);
-            this.guna2Panel2.Controls.Add(this.btnQuayLai);
-            this.guna2Panel2.Controls.Add(this.guna2Panel1);
-            this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel2.Controls.Add(this.ThemPanel);
+            this.guna2Panel2.Controls.Add(this.SuaPanel);
+            this.guna2Panel2.Controls.Add(this.ViewPanel);
+            this.guna2Panel2.Controls.Add(this.ThongTinPanel);
+            this.guna2Panel2.Controls.Add(this.PictureBoxAnh);
             resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
             this.guna2Panel2.Name = "guna2Panel2";
+            // 
+            // ThemPanel
+            // 
+            this.ThemPanel.Controls.Add(this.ThemBtn);
+            this.ThemPanel.Controls.Add(this.ThoatBtn);
+            resources.ApplyResources(this.ThemPanel, "ThemPanel");
+            this.ThemPanel.Name = "ThemPanel";
+            // 
+            // ThemBtn
+            // 
+            this.ThemBtn.BorderRadius = 10;
+            this.ThemBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ThemBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ThemBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ThemBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ThemBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            resources.ApplyResources(this.ThemBtn, "ThemBtn");
+            this.ThemBtn.ForeColor = System.Drawing.Color.White;
+            this.ThemBtn.Name = "ThemBtn";
+            this.ThemBtn.Click += new System.EventHandler(this.ThemBtn_Click);
+            // 
+            // ThoatBtn
+            // 
+            this.ThoatBtn.BorderRadius = 10;
+            this.ThoatBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ThoatBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ThoatBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ThoatBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ThoatBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            resources.ApplyResources(this.ThoatBtn, "ThoatBtn");
+            this.ThoatBtn.ForeColor = System.Drawing.Color.White;
+            this.ThoatBtn.Name = "ThoatBtn";
+            this.ThoatBtn.Click += new System.EventHandler(this.ThoatBtn_Click);
+            // 
+            // SuaPanel
+            // 
+            this.SuaPanel.Controls.Add(this.LuuBtn);
+            this.SuaPanel.Controls.Add(this.HuyBtn);
+            resources.ApplyResources(this.SuaPanel, "SuaPanel");
+            this.SuaPanel.Name = "SuaPanel";
+            // 
+            // LuuBtn
+            // 
+            this.LuuBtn.BorderRadius = 10;
+            this.LuuBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LuuBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LuuBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LuuBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LuuBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            resources.ApplyResources(this.LuuBtn, "LuuBtn");
+            this.LuuBtn.ForeColor = System.Drawing.Color.White;
+            this.LuuBtn.Name = "LuuBtn";
+            this.LuuBtn.Click += new System.EventHandler(this.LuuBtn_Click_1);
+            // 
+            // HuyBtn
+            // 
+            this.HuyBtn.BorderRadius = 10;
+            this.HuyBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.HuyBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.HuyBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.HuyBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.HuyBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            resources.ApplyResources(this.HuyBtn, "HuyBtn");
+            this.HuyBtn.ForeColor = System.Drawing.Color.White;
+            this.HuyBtn.Name = "HuyBtn";
+            this.HuyBtn.Click += new System.EventHandler(this.HuyBtn_Click);
+            // 
+            // ViewPanel
+            // 
+            this.ViewPanel.Controls.Add(this.btnSua);
+            this.ViewPanel.Controls.Add(this.btnXoa);
+            this.ViewPanel.Controls.Add(this.btnHuy);
+            resources.ApplyResources(this.ViewPanel, "ViewPanel");
+            this.ViewPanel.Name = "ViewPanel";
+            // 
+            // btnSua
+            // 
+            this.btnSua.BorderRadius = 10;
+            this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            resources.ApplyResources(this.btnSua, "btnSua");
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -102,75 +215,372 @@
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Name = "btnXoa";
             // 
-            // btnSua
+            // btnHuy
             // 
-            this.btnSua.BorderRadius = 10;
-            this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
-            resources.ApplyResources(this.btnSua, "btnSua");
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Name = "btnSua";
+            this.btnHuy.BorderRadius = 10;
+            this.btnHuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHuy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            resources.ApplyResources(this.btnHuy, "btnHuy");
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
-            // btnQuayLai
+            // ThongTinPanel
             // 
-            this.btnQuayLai.BorderRadius = 10;
-            this.btnQuayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnQuayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnQuayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnQuayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnQuayLai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
-            resources.ApplyResources(this.btnQuayLai, "btnQuayLai");
-            this.btnQuayLai.ForeColor = System.Drawing.Color.White;
-            this.btnQuayLai.Name = "btnQuayLai";
-            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
+            this.ThongTinPanel.Controls.Add(this.comboBoxDacDiem);
+            this.ThongTinPanel.Controls.Add(this.comboBoxHinhDang);
+            this.ThongTinPanel.Controls.Add(this.comboBoxNhaSanXuat);
+            this.ThongTinPanel.Controls.Add(this.comboBoxLoaiSP);
+            this.ThongTinPanel.Controls.Add(this.comboBoxNuocSanXuat);
+            this.ThongTinPanel.Controls.Add(this.comboBoxMau);
+            this.ThongTinPanel.Controls.Add(this.comboBoxCongDung);
+            this.ThongTinPanel.Controls.Add(this.comboBoxChatLieu);
+            this.ThongTinPanel.Controls.Add(this.comboBoxKichThuoc);
+            this.ThongTinPanel.Controls.Add(this.txtDonGiaNhap);
+            this.ThongTinPanel.Controls.Add(this.txtSoLuong);
+            this.ThongTinPanel.Controls.Add(this.txtThoiGianBaoHanh);
+            this.ThongTinPanel.Controls.Add(this.txtDonGiaBan);
+            this.ThongTinPanel.Controls.Add(this.txtTenHangHoa);
+            this.ThongTinPanel.Controls.Add(this.txtMa);
+            this.ThongTinPanel.Controls.Add(this.txtGhiChu);
+            this.ThongTinPanel.Controls.Add(this.label17);
+            this.ThongTinPanel.Controls.Add(this.label10);
+            this.ThongTinPanel.Controls.Add(this.label16);
+            this.ThongTinPanel.Controls.Add(this.label9);
+            this.ThongTinPanel.Controls.Add(this.label15);
+            this.ThongTinPanel.Controls.Add(this.label7);
+            this.ThongTinPanel.Controls.Add(this.label14);
+            this.ThongTinPanel.Controls.Add(this.label8);
+            this.ThongTinPanel.Controls.Add(this.lbSoLuong);
+            this.ThongTinPanel.Controls.Add(this.label6);
+            this.ThongTinPanel.Controls.Add(this.label12);
+            this.ThongTinPanel.Controls.Add(this.label11);
+            this.ThongTinPanel.Controls.Add(this.label5);
+            this.ThongTinPanel.Controls.Add(this.label4);
+            this.ThongTinPanel.Controls.Add(this.lbMa);
+            this.ThongTinPanel.Controls.Add(this.label2);
+            resources.ApplyResources(this.ThongTinPanel, "ThongTinPanel");
+            this.ThongTinPanel.Name = "ThongTinPanel";
+            this.ThongTinPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
-            // guna2Panel1
+            // comboBoxDacDiem
             // 
-            this.guna2Panel1.Controls.Add(this.txtGhiChu);
-            this.guna2Panel1.Controls.Add(this.txtCongDung);
-            this.guna2Panel1.Controls.Add(this.txtBaoHanh);
-            this.guna2Panel1.Controls.Add(this.txtNhaSX);
-            this.guna2Panel1.Controls.Add(this.txtSoLuong);
-            this.guna2Panel1.Controls.Add(this.txtKichThuoc);
-            this.guna2Panel1.Controls.Add(this.txtGiaBan);
-            this.guna2Panel1.Controls.Add(this.txtChatLieu);
-            this.guna2Panel1.Controls.Add(this.txtNuocSX);
-            this.guna2Panel1.Controls.Add(this.txtLoai);
-            this.guna2Panel1.Controls.Add(this.txtGiaNhap);
-            this.guna2Panel1.Controls.Add(this.txtHinhDang);
-            this.guna2Panel1.Controls.Add(this.txtMau);
-            this.guna2Panel1.Controls.Add(this.txtTen);
-            this.guna2Panel1.Controls.Add(this.txtDacDiem);
-            this.guna2Panel1.Controls.Add(this.customTextBox1);
-            this.guna2Panel1.Controls.Add(this.label17);
-            this.guna2Panel1.Controls.Add(this.label10);
-            this.guna2Panel1.Controls.Add(this.label16);
-            this.guna2Panel1.Controls.Add(this.label9);
-            this.guna2Panel1.Controls.Add(this.label15);
-            this.guna2Panel1.Controls.Add(this.label7);
-            this.guna2Panel1.Controls.Add(this.label14);
-            this.guna2Panel1.Controls.Add(this.label8);
-            this.guna2Panel1.Controls.Add(this.lbSoLuong);
-            this.guna2Panel1.Controls.Add(this.label6);
-            this.guna2Panel1.Controls.Add(this.label12);
-            this.guna2Panel1.Controls.Add(this.label11);
-            this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Controls.Add(this.label4);
-            this.guna2Panel1.Controls.Add(this.lbMa);
-            this.guna2Panel1.Controls.Add(this.label2);
-            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            this.comboBoxDacDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxDacDiem.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxDacDiem.BorderRadius = 10;
+            this.comboBoxDacDiem.BorderThickness = 0;
+            this.comboBoxDacDiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxDacDiem.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxDacDiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxDacDiem, "comboBoxDacDiem");
+            this.comboBoxDacDiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxDacDiem.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxDacDiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxDacDiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxDacDiem.Items.AddRange(new object[] {
+            resources.GetString("comboBoxDacDiem.Items"),
+            resources.GetString("comboBoxDacDiem.Items1"),
+            resources.GetString("comboBoxDacDiem.Items2")});
+            this.comboBoxDacDiem.Name = "comboBoxDacDiem";
+            this.comboBoxDacDiem.StartIndex = 1;
+            // 
+            // comboBoxHinhDang
+            // 
+            this.comboBoxHinhDang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxHinhDang.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxHinhDang.BorderRadius = 10;
+            this.comboBoxHinhDang.BorderThickness = 0;
+            this.comboBoxHinhDang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxHinhDang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxHinhDang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxHinhDang, "comboBoxHinhDang");
+            this.comboBoxHinhDang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxHinhDang.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxHinhDang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxHinhDang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxHinhDang.Items.AddRange(new object[] {
+            resources.GetString("comboBoxHinhDang.Items"),
+            resources.GetString("comboBoxHinhDang.Items1"),
+            resources.GetString("comboBoxHinhDang.Items2"),
+            resources.GetString("comboBoxHinhDang.Items3")});
+            this.comboBoxHinhDang.Name = "comboBoxHinhDang";
+            this.comboBoxHinhDang.StartIndex = 3;
+            // 
+            // comboBoxNhaSanXuat
+            // 
+            this.comboBoxNhaSanXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxNhaSanXuat.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxNhaSanXuat.BorderRadius = 10;
+            this.comboBoxNhaSanXuat.BorderThickness = 0;
+            this.comboBoxNhaSanXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxNhaSanXuat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxNhaSanXuat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxNhaSanXuat, "comboBoxNhaSanXuat");
+            this.comboBoxNhaSanXuat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxNhaSanXuat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxNhaSanXuat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxNhaSanXuat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxNhaSanXuat.Items.AddRange(new object[] {
+            resources.GetString("comboBoxNhaSanXuat.Items"),
+            resources.GetString("comboBoxNhaSanXuat.Items1")});
+            this.comboBoxNhaSanXuat.Name = "comboBoxNhaSanXuat";
+            this.comboBoxNhaSanXuat.StartIndex = 0;
+            // 
+            // comboBoxLoaiSP
+            // 
+            this.comboBoxLoaiSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxLoaiSP.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxLoaiSP.BorderRadius = 10;
+            this.comboBoxLoaiSP.BorderThickness = 0;
+            this.comboBoxLoaiSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxLoaiSP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxLoaiSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxLoaiSP, "comboBoxLoaiSP");
+            this.comboBoxLoaiSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxLoaiSP.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxLoaiSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxLoaiSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxLoaiSP.Items.AddRange(new object[] {
+            resources.GetString("comboBoxLoaiSP.Items"),
+            resources.GetString("comboBoxLoaiSP.Items1")});
+            this.comboBoxLoaiSP.Name = "comboBoxLoaiSP";
+            this.comboBoxLoaiSP.StartIndex = 1;
+            // 
+            // comboBoxNuocSanXuat
+            // 
+            this.comboBoxNuocSanXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxNuocSanXuat.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxNuocSanXuat.BorderRadius = 10;
+            this.comboBoxNuocSanXuat.BorderThickness = 0;
+            this.comboBoxNuocSanXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxNuocSanXuat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxNuocSanXuat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxNuocSanXuat, "comboBoxNuocSanXuat");
+            this.comboBoxNuocSanXuat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxNuocSanXuat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxNuocSanXuat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxNuocSanXuat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxNuocSanXuat.Items.AddRange(new object[] {
+            resources.GetString("comboBoxNuocSanXuat.Items"),
+            resources.GetString("comboBoxNuocSanXuat.Items1")});
+            this.comboBoxNuocSanXuat.Name = "comboBoxNuocSanXuat";
+            this.comboBoxNuocSanXuat.StartIndex = 0;
+            // 
+            // comboBoxMau
+            // 
+            this.comboBoxMau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxMau.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxMau.BorderRadius = 10;
+            this.comboBoxMau.BorderThickness = 0;
+            this.comboBoxMau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxMau.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxMau.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxMau, "comboBoxMau");
+            this.comboBoxMau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxMau.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxMau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxMau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxMau.Items.AddRange(new object[] {
+            resources.GetString("comboBoxMau.Items"),
+            resources.GetString("comboBoxMau.Items1"),
+            resources.GetString("comboBoxMau.Items2"),
+            resources.GetString("comboBoxMau.Items3"),
+            resources.GetString("comboBoxMau.Items4")});
+            this.comboBoxMau.Name = "comboBoxMau";
+            this.comboBoxMau.StartIndex = 0;
+            // 
+            // comboBoxCongDung
+            // 
+            this.comboBoxCongDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxCongDung.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxCongDung.BorderRadius = 10;
+            this.comboBoxCongDung.BorderThickness = 0;
+            this.comboBoxCongDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxCongDung.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxCongDung.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxCongDung, "comboBoxCongDung");
+            this.comboBoxCongDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxCongDung.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxCongDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxCongDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxCongDung.Items.AddRange(new object[] {
+            resources.GetString("comboBoxCongDung.Items"),
+            resources.GetString("comboBoxCongDung.Items1"),
+            resources.GetString("comboBoxCongDung.Items2")});
+            this.comboBoxCongDung.Name = "comboBoxCongDung";
+            this.comboBoxCongDung.StartIndex = 1;
+            // 
+            // comboBoxChatLieu
+            // 
+            this.comboBoxChatLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxChatLieu.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxChatLieu.BorderRadius = 10;
+            this.comboBoxChatLieu.BorderThickness = 0;
+            this.comboBoxChatLieu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxChatLieu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxChatLieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxChatLieu, "comboBoxChatLieu");
+            this.comboBoxChatLieu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxChatLieu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxChatLieu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxChatLieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxChatLieu.Items.AddRange(new object[] {
+            resources.GetString("comboBoxChatLieu.Items"),
+            resources.GetString("comboBoxChatLieu.Items1"),
+            resources.GetString("comboBoxChatLieu.Items2")});
+            this.comboBoxChatLieu.Name = "comboBoxChatLieu";
+            this.comboBoxChatLieu.StartIndex = 1;
+            // 
+            // comboBoxKichThuoc
+            // 
+            this.comboBoxKichThuoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxKichThuoc.BorderColor = System.Drawing.Color.Black;
+            this.comboBoxKichThuoc.BorderRadius = 10;
+            this.comboBoxKichThuoc.BorderThickness = 0;
+            this.comboBoxKichThuoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxKichThuoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxKichThuoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxKichThuoc, "comboBoxKichThuoc");
+            this.comboBoxKichThuoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.comboBoxKichThuoc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxKichThuoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxKichThuoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.comboBoxKichThuoc.Items.AddRange(new object[] {
+            resources.GetString("comboBoxKichThuoc.Items"),
+            resources.GetString("comboBoxKichThuoc.Items1"),
+            resources.GetString("comboBoxKichThuoc.Items2")});
+            this.comboBoxKichThuoc.Name = "comboBoxKichThuoc";
+            this.comboBoxKichThuoc.StartIndex = 1;
+            // 
+            // txtDonGiaNhap
+            // 
+            this.txtDonGiaNhap.BorderColor = System.Drawing.Color.Black;
+            this.txtDonGiaNhap.BorderRadius = 10;
+            this.txtDonGiaNhap.BorderThickness = 0;
+            this.txtDonGiaNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDonGiaNhap.DefaultText = "1.000.000";
+            this.txtDonGiaNhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDonGiaNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtDonGiaNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDonGiaNhap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            resources.ApplyResources(this.txtDonGiaNhap, "txtDonGiaNhap");
+            this.txtDonGiaNhap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtDonGiaNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDonGiaNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDonGiaNhap.Name = "txtDonGiaNhap";
+            this.txtDonGiaNhap.PasswordChar = '\0';
+            this.txtDonGiaNhap.PlaceholderText = "Nhập giá nhập";
+            this.txtDonGiaNhap.SelectedText = "";
+            // 
+            // txtSoLuong
+            // 
+            this.txtSoLuong.BorderColor = System.Drawing.Color.Black;
+            this.txtSoLuong.BorderRadius = 10;
+            this.txtSoLuong.BorderThickness = 0;
+            this.txtSoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSoLuong.DefaultText = "100";
+            this.txtSoLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSoLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtSoLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSoLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            resources.ApplyResources(this.txtSoLuong, "txtSoLuong");
+            this.txtSoLuong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtSoLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.PasswordChar = '\0';
+            this.txtSoLuong.PlaceholderText = "Nhập lo luong sản phẩm";
+            this.txtSoLuong.SelectedText = "";
+            // 
+            // txtThoiGianBaoHanh
+            // 
+            this.txtThoiGianBaoHanh.BorderColor = System.Drawing.Color.Black;
+            this.txtThoiGianBaoHanh.BorderRadius = 10;
+            this.txtThoiGianBaoHanh.BorderThickness = 0;
+            this.txtThoiGianBaoHanh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtThoiGianBaoHanh.DefaultText = "12";
+            this.txtThoiGianBaoHanh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtThoiGianBaoHanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtThoiGianBaoHanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtThoiGianBaoHanh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            resources.ApplyResources(this.txtThoiGianBaoHanh, "txtThoiGianBaoHanh");
+            this.txtThoiGianBaoHanh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtThoiGianBaoHanh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtThoiGianBaoHanh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtThoiGianBaoHanh.Name = "txtThoiGianBaoHanh";
+            this.txtThoiGianBaoHanh.PasswordChar = '\0';
+            this.txtThoiGianBaoHanh.PlaceholderText = "Nhập thời gian bảo hành sản phẩm";
+            this.txtThoiGianBaoHanh.SelectedText = "";
+            // 
+            // txtDonGiaBan
+            // 
+            this.txtDonGiaBan.BorderColor = System.Drawing.Color.Black;
+            this.txtDonGiaBan.BorderRadius = 10;
+            this.txtDonGiaBan.BorderThickness = 0;
+            this.txtDonGiaBan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDonGiaBan.DefaultText = "1.5000.000";
+            this.txtDonGiaBan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDonGiaBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtDonGiaBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDonGiaBan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            resources.ApplyResources(this.txtDonGiaBan, "txtDonGiaBan");
+            this.txtDonGiaBan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtDonGiaBan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDonGiaBan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDonGiaBan.Name = "txtDonGiaBan";
+            this.txtDonGiaBan.PasswordChar = '\0';
+            this.txtDonGiaBan.PlaceholderText = "Nhập giá bán";
+            this.txtDonGiaBan.SelectedText = "";
+            // 
+            // txtTenHangHoa
+            // 
+            this.txtTenHangHoa.BorderColor = System.Drawing.Color.Black;
+            this.txtTenHangHoa.BorderRadius = 10;
+            this.txtTenHangHoa.BorderThickness = 0;
+            this.txtTenHangHoa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTenHangHoa.DefaultText = "Ghế gỗ cao";
+            this.txtTenHangHoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTenHangHoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtTenHangHoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenHangHoa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            resources.ApplyResources(this.txtTenHangHoa, "txtTenHangHoa");
+            this.txtTenHangHoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtTenHangHoa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenHangHoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenHangHoa.Name = "txtTenHangHoa";
+            this.txtTenHangHoa.PasswordChar = '\0';
+            this.txtTenHangHoa.PlaceholderText = "Nhập tên sản phẩm";
+            this.txtTenHangHoa.SelectedText = "";
+            // 
+            // txtMa
+            // 
+            this.txtMa.BorderColor = System.Drawing.Color.Black;
+            this.txtMa.BorderRadius = 10;
+            this.txtMa.BorderThickness = 0;
+            this.txtMa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMa.DefaultText = "SP1";
+            this.txtMa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtMa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            resources.ApplyResources(this.txtMa, "txtMa");
+            this.txtMa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
+            this.txtMa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMa.Name = "txtMa";
+            this.txtMa.PasswordChar = '\0';
+            this.txtMa.PlaceholderText = "Nhập mã sản phẩm";
+            this.txtMa.SelectedText = "";
             // 
             // txtGhiChu
             // 
             this.txtGhiChu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGhiChu.DefaultText = "Đồ gỗ chât lượng cao";
             this.txtGhiChu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtGhiChu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGhiChu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
             this.txtGhiChu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGhiChu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             resources.ApplyResources(this.txtGhiChu, "txtGhiChu");
@@ -182,261 +592,6 @@
             this.txtGhiChu.PasswordChar = '\0';
             this.txtGhiChu.PlaceholderText = "Ghi chú";
             this.txtGhiChu.SelectedText = "";
-            // 
-            // txtCongDung
-            // 
-            this.txtCongDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtCongDung.BorderColor = System.Drawing.Color.Black;
-            this.txtCongDung.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtCongDung.BorderRadius = 0;
-            this.txtCongDung.BorderSize = 2;
-            resources.ApplyResources(this.txtCongDung, "txtCongDung");
-            this.txtCongDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCongDung.Multiline = false;
-            this.txtCongDung.Name = "txtCongDung";
-            this.txtCongDung.PasswordChar = false;
-            this.txtCongDung.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCongDung.PlaceholderText = "Công dụng";
-            this.txtCongDung.Texts = "";
-            this.txtCongDung.UnderlinedStyle = true;
-            // 
-            // txtBaoHanh
-            // 
-            this.txtBaoHanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtBaoHanh.BorderColor = System.Drawing.Color.Black;
-            this.txtBaoHanh.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtBaoHanh.BorderRadius = 0;
-            this.txtBaoHanh.BorderSize = 2;
-            resources.ApplyResources(this.txtBaoHanh, "txtBaoHanh");
-            this.txtBaoHanh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBaoHanh.Multiline = false;
-            this.txtBaoHanh.Name = "txtBaoHanh";
-            this.txtBaoHanh.PasswordChar = false;
-            this.txtBaoHanh.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtBaoHanh.PlaceholderText = "Thời gian bảo hành";
-            this.txtBaoHanh.Texts = "";
-            this.txtBaoHanh.UnderlinedStyle = true;
-            // 
-            // txtNhaSX
-            // 
-            this.txtNhaSX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtNhaSX.BorderColor = System.Drawing.Color.Black;
-            this.txtNhaSX.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtNhaSX.BorderRadius = 0;
-            this.txtNhaSX.BorderSize = 2;
-            resources.ApplyResources(this.txtNhaSX, "txtNhaSX");
-            this.txtNhaSX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNhaSX.Multiline = false;
-            this.txtNhaSX.Name = "txtNhaSX";
-            this.txtNhaSX.PasswordChar = false;
-            this.txtNhaSX.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNhaSX.PlaceholderText = "Nhà sản xuất";
-            this.txtNhaSX.Texts = "";
-            this.txtNhaSX.UnderlinedStyle = true;
-            // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtSoLuong.BorderColor = System.Drawing.Color.Black;
-            this.txtSoLuong.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtSoLuong.BorderRadius = 0;
-            this.txtSoLuong.BorderSize = 2;
-            resources.ApplyResources(this.txtSoLuong, "txtSoLuong");
-            this.txtSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSoLuong.Multiline = false;
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.PasswordChar = false;
-            this.txtSoLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSoLuong.PlaceholderText = "Số lượng";
-            this.txtSoLuong.Texts = "";
-            this.txtSoLuong.UnderlinedStyle = true;
-            // 
-            // txtKichThuoc
-            // 
-            this.txtKichThuoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtKichThuoc.BorderColor = System.Drawing.Color.Black;
-            this.txtKichThuoc.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtKichThuoc.BorderRadius = 0;
-            this.txtKichThuoc.BorderSize = 2;
-            resources.ApplyResources(this.txtKichThuoc, "txtKichThuoc");
-            this.txtKichThuoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtKichThuoc.Multiline = false;
-            this.txtKichThuoc.Name = "txtKichThuoc";
-            this.txtKichThuoc.PasswordChar = false;
-            this.txtKichThuoc.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtKichThuoc.PlaceholderText = "Kích thước";
-            this.txtKichThuoc.Texts = "";
-            this.txtKichThuoc.UnderlinedStyle = true;
-            // 
-            // txtGiaBan
-            // 
-            this.txtGiaBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtGiaBan.BorderColor = System.Drawing.Color.Black;
-            this.txtGiaBan.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtGiaBan.BorderRadius = 0;
-            this.txtGiaBan.BorderSize = 2;
-            resources.ApplyResources(this.txtGiaBan, "txtGiaBan");
-            this.txtGiaBan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtGiaBan.Multiline = false;
-            this.txtGiaBan.Name = "txtGiaBan";
-            this.txtGiaBan.PasswordChar = false;
-            this.txtGiaBan.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtGiaBan.PlaceholderText = "Đơn giá bán";
-            this.txtGiaBan.Texts = "";
-            this.txtGiaBan.UnderlinedStyle = true;
-            // 
-            // txtChatLieu
-            // 
-            this.txtChatLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtChatLieu.BorderColor = System.Drawing.Color.Black;
-            this.txtChatLieu.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtChatLieu.BorderRadius = 0;
-            this.txtChatLieu.BorderSize = 2;
-            resources.ApplyResources(this.txtChatLieu, "txtChatLieu");
-            this.txtChatLieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtChatLieu.Multiline = false;
-            this.txtChatLieu.Name = "txtChatLieu";
-            this.txtChatLieu.PasswordChar = false;
-            this.txtChatLieu.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtChatLieu.PlaceholderText = "Chất liệu";
-            this.txtChatLieu.Texts = "";
-            this.txtChatLieu.UnderlinedStyle = true;
-            // 
-            // txtNuocSX
-            // 
-            this.txtNuocSX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtNuocSX.BorderColor = System.Drawing.Color.Black;
-            this.txtNuocSX.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtNuocSX.BorderRadius = 0;
-            this.txtNuocSX.BorderSize = 2;
-            resources.ApplyResources(this.txtNuocSX, "txtNuocSX");
-            this.txtNuocSX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNuocSX.Multiline = false;
-            this.txtNuocSX.Name = "txtNuocSX";
-            this.txtNuocSX.PasswordChar = false;
-            this.txtNuocSX.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNuocSX.PlaceholderText = "Nước xuất xứ";
-            this.txtNuocSX.Texts = "";
-            this.txtNuocSX.UnderlinedStyle = true;
-            // 
-            // txtLoai
-            // 
-            this.txtLoai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtLoai.BorderColor = System.Drawing.Color.Black;
-            this.txtLoai.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtLoai.BorderRadius = 0;
-            this.txtLoai.BorderSize = 2;
-            resources.ApplyResources(this.txtLoai, "txtLoai");
-            this.txtLoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtLoai.Multiline = false;
-            this.txtLoai.Name = "txtLoai";
-            this.txtLoai.PasswordChar = false;
-            this.txtLoai.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtLoai.PlaceholderText = "Lọa";
-            this.txtLoai.Texts = "";
-            this.txtLoai.UnderlinedStyle = true;
-            // 
-            // txtGiaNhap
-            // 
-            this.txtGiaNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtGiaNhap.BorderColor = System.Drawing.Color.Black;
-            this.txtGiaNhap.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtGiaNhap.BorderRadius = 0;
-            this.txtGiaNhap.BorderSize = 2;
-            resources.ApplyResources(this.txtGiaNhap, "txtGiaNhap");
-            this.txtGiaNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtGiaNhap.Multiline = false;
-            this.txtGiaNhap.Name = "txtGiaNhap";
-            this.txtGiaNhap.PasswordChar = false;
-            this.txtGiaNhap.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtGiaNhap.PlaceholderText = "Đơn giá nhập";
-            this.txtGiaNhap.Texts = "";
-            this.txtGiaNhap.UnderlinedStyle = true;
-            // 
-            // txtHinhDang
-            // 
-            this.txtHinhDang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtHinhDang.BorderColor = System.Drawing.Color.Black;
-            this.txtHinhDang.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtHinhDang.BorderRadius = 0;
-            this.txtHinhDang.BorderSize = 2;
-            resources.ApplyResources(this.txtHinhDang, "txtHinhDang");
-            this.txtHinhDang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtHinhDang.Multiline = false;
-            this.txtHinhDang.Name = "txtHinhDang";
-            this.txtHinhDang.PasswordChar = false;
-            this.txtHinhDang.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtHinhDang.PlaceholderText = "Hình dạng";
-            this.txtHinhDang.Texts = "";
-            this.txtHinhDang.UnderlinedStyle = true;
-            // 
-            // txtMau
-            // 
-            this.txtMau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtMau.BorderColor = System.Drawing.Color.Black;
-            this.txtMau.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtMau.BorderRadius = 0;
-            this.txtMau.BorderSize = 2;
-            resources.ApplyResources(this.txtMau, "txtMau");
-            this.txtMau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMau.Multiline = false;
-            this.txtMau.Name = "txtMau";
-            this.txtMau.PasswordChar = false;
-            this.txtMau.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtMau.PlaceholderText = "Màu";
-            this.txtMau.Texts = "";
-            this.txtMau.UnderlinedStyle = true;
-            // 
-            // txtTen
-            // 
-            this.txtTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtTen.BorderColor = System.Drawing.Color.Black;
-            this.txtTen.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtTen.BorderRadius = 0;
-            this.txtTen.BorderSize = 2;
-            resources.ApplyResources(this.txtTen, "txtTen");
-            this.txtTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTen.Multiline = false;
-            this.txtTen.Name = "txtTen";
-            this.txtTen.PasswordChar = false;
-            this.txtTen.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTen.PlaceholderText = "Mã sản phẩm";
-            this.txtTen.Texts = "";
-            this.txtTen.UnderlinedStyle = true;
-            // 
-            // txtDacDiem
-            // 
-            this.txtDacDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.txtDacDiem.BorderColor = System.Drawing.Color.Black;
-            this.txtDacDiem.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtDacDiem.BorderRadius = 0;
-            this.txtDacDiem.BorderSize = 2;
-            resources.ApplyResources(this.txtDacDiem, "txtDacDiem");
-            this.txtDacDiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDacDiem.Multiline = false;
-            this.txtDacDiem.Name = "txtDacDiem";
-            this.txtDacDiem.PasswordChar = false;
-            this.txtDacDiem.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDacDiem.PlaceholderText = "Đặc điểm";
-            this.txtDacDiem.Texts = "";
-            this.txtDacDiem.UnderlinedStyle = true;
-            // 
-            // customTextBox1
-            // 
-            this.customTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
-            this.customTextBox1.BorderColor = System.Drawing.Color.Black;
-            this.customTextBox1.BorderFocusColor = System.Drawing.Color.Black;
-            this.customTextBox1.BorderRadius = 0;
-            this.customTextBox1.BorderSize = 2;
-            resources.ApplyResources(this.customTextBox1, "customTextBox1");
-            this.customTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox1.Multiline = false;
-            this.customTextBox1.Name = "customTextBox1";
-            this.customTextBox1.PasswordChar = false;
-            this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox1.PlaceholderText = "Mã sản phẩm";
-            this.customTextBox1.Texts = "";
-            this.customTextBox1.UnderlinedStyle = true;
             // 
             // label17
             // 
@@ -522,51 +677,64 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // guna2PictureBox1
+            // PictureBoxAnh
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            this.PictureBoxAnh.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.PictureBoxAnh, "PictureBoxAnh");
+            this.PictureBoxAnh.ImageRotate = 0F;
+            this.PictureBoxAnh.Name = "PictureBoxAnh";
+            this.PictureBoxAnh.TabStop = false;
+            this.PictureBoxAnh.UseTransparentBackground = true;
+            this.PictureBoxAnh.Click += new System.EventHandler(this.PictureBoxAnh_Click);
             // 
-            // label1
+            // HeaderLb
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.HeaderLb, "HeaderLb");
+            this.HeaderLb.Name = "HeaderLb";
             // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.label1;
+            this.guna2DragControl1.TargetControl = this.HeaderLb;
             this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2ControlBox1
+            // 
+            resources.ApplyResources(this.guna2ControlBox1, "guna2ControlBox1");
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(230)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
             // 
             // frmChiTietSanPham
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(230)))));
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.HeaderLb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmChiTietSanPham";
             this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.ThemPanel.ResumeLayout(false);
+            this.SuaPanel.ResumeLayout(false);
+            this.ViewPanel.ResumeLayout(false);
+            this.ThongTinPanel.ResumeLayout(false);
+            this.ThongTinPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAnh)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox PictureBoxAnh;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label HeaderLb;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel ThongTinPanel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -583,25 +751,33 @@
         private System.Windows.Forms.Label lbSoLuong;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private CustomTextBox customTextBox1;
-        private CustomTextBox txtCongDung;
-        private CustomTextBox txtNhaSX;
-        private CustomTextBox txtKichThuoc;
-        private CustomTextBox txtChatLieu;
-        private CustomTextBox txtLoai;
-        private CustomTextBox txtHinhDang;
-        private CustomTextBox txtTen;
-        private CustomTextBox txtBaoHanh;
-        private CustomTextBox txtSoLuong;
-        private CustomTextBox txtGiaBan;
-        private CustomTextBox txtNuocSX;
-        private CustomTextBox txtGiaNhap;
-        private CustomTextBox txtMau;
-        private CustomTextBox txtDacDiem;
         private Guna.UI2.WinForms.Guna2TextBox txtGhiChu;
-        private Guna.UI2.WinForms.Guna2Button btnQuayLai;
+        private Guna.UI2.WinForms.Guna2Button btnHuy;
         private Guna.UI2.WinForms.Guna2Button btnXoa;
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2TextBox txtMa;
+        private Guna.UI2.WinForms.Guna2TextBox txtTenHangHoa;
+        private Guna.UI2.WinForms.Guna2TextBox txtDonGiaNhap;
+        private Guna.UI2.WinForms.Guna2TextBox txtSoLuong;
+        private Guna.UI2.WinForms.Guna2TextBox txtThoiGianBaoHanh;
+        private Guna.UI2.WinForms.Guna2TextBox txtDonGiaBan;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxKichThuoc;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxDacDiem;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxHinhDang;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxNhaSanXuat;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxLoaiSP;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxNuocSanXuat;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxMau;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxCongDung;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxChatLieu;
+        private System.Windows.Forms.Panel ViewPanel;
+        private System.Windows.Forms.Panel SuaPanel;
+        private Guna.UI2.WinForms.Guna2Button LuuBtn;
+        private Guna.UI2.WinForms.Guna2Button HuyBtn;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.Panel ThemPanel;
+        private Guna.UI2.WinForms.Guna2Button ThemBtn;
+        private Guna.UI2.WinForms.Guna2Button ThoatBtn;
     }
 }
