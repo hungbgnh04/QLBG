@@ -20,6 +20,12 @@ namespace QLBG.Views
         private void ChiTietSanPham(object sender, EventArgs e)
         {
             var sp = sender as TheSanPham;
+            var chiTietSanPham = new frmChiTietSanPham(sp.MaSP);
+            chiTietSanPham.Show();
+        }
+
+        private void theSanPham2_Load(object sender, EventArgs e)
+        {
 
         }
     }

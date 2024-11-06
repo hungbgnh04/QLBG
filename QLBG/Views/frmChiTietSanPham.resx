@@ -125,15 +125,592 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1262, 894</value>
+    <value>1262, 981</value>
+  </data>
+  <data name="btnXoa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="btnXoa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 829</value>
+  </data>
+  <data name="btnXoa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 55</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnXoa.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnXoa.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btnXoa.Name" xml:space="preserve">
+    <value>btnXoa</value>
+  </data>
+  <data name="&gt;&gt;btnXoa.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnXoa.Parent" xml:space="preserve">
+    <value>guna2Panel2</value>
+  </data>
+  <data name="&gt;&gt;btnXoa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSua.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="btnSua.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 748</value>
+  </data>
+  <data name="btnSua.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 55</value>
+  </data>
+  <data name="btnSua.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnSua.Text" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="&gt;&gt;btnSua.Name" xml:space="preserve">
+    <value>btnSua</value>
+  </data>
+  <data name="&gt;&gt;btnSua.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnSua.Parent" xml:space="preserve">
+    <value>guna2Panel2</value>
+  </data>
+  <data name="&gt;&gt;btnSua.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnQuayLai.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="btnQuayLai.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 748</value>
+  </data>
+  <data name="btnQuayLai.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 55</value>
+  </data>
+  <data name="btnQuayLai.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnQuayLai.Text" xml:space="preserve">
+    <value>Quay Lại</value>
+  </data>
+  <data name="&gt;&gt;btnQuayLai.Name" xml:space="preserve">
+    <value>btnQuayLai</value>
+  </data>
+  <data name="&gt;&gt;btnQuayLai.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnQuayLai.Parent" xml:space="preserve">
+    <value>guna2Panel2</value>
+  </data>
+  <data name="&gt;&gt;btnQuayLai.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtGhiChu.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtGhiChu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtGhiChu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 829</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtGhiChu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="txtGhiChu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 82</value>
+  </data>
+  <data name="txtGhiChu.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtGhiChu.Name" xml:space="preserve">
+    <value>txtGhiChu</value>
+  </data>
+  <data name="&gt;&gt;txtGhiChu.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtGhiChu.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtGhiChu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCongDung.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtCongDung.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtCongDung.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 388</value>
+  </data>
+  <data name="txtCongDung.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtCongDung.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtCongDung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtCongDung.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtCongDung.Name" xml:space="preserve">
+    <value>txtCongDung</value>
+  </data>
+  <data name="&gt;&gt;txtCongDung.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtCongDung.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtCongDung.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtBaoHanh.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtBaoHanh.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtBaoHanh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 710</value>
+  </data>
+  <data name="txtBaoHanh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtBaoHanh.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtBaoHanh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtBaoHanh.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtBaoHanh.Name" xml:space="preserve">
+    <value>txtBaoHanh</value>
+  </data>
+  <data name="&gt;&gt;txtBaoHanh.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBaoHanh.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtBaoHanh.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtNhaSX.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNhaSX.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtNhaSX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 332</value>
+  </data>
+  <data name="txtNhaSX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtNhaSX.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtNhaSX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtNhaSX.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtNhaSX.Name" xml:space="preserve">
+    <value>txtNhaSX</value>
+  </data>
+  <data name="&gt;&gt;txtNhaSX.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNhaSX.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtNhaSX.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtSoLuong.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtSoLuong.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtSoLuong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 764</value>
+  </data>
+  <data name="txtSoLuong.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtSoLuong.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtSoLuong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtSoLuong.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtSoLuong.Name" xml:space="preserve">
+    <value>txtSoLuong</value>
+  </data>
+  <data name="&gt;&gt;txtSoLuong.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtSoLuong.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtSoLuong.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtKichThuoc.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtKichThuoc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtKichThuoc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 169</value>
+  </data>
+  <data name="txtKichThuoc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtKichThuoc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtKichThuoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtKichThuoc.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtKichThuoc.Name" xml:space="preserve">
+    <value>txtKichThuoc</value>
+  </data>
+  <data name="&gt;&gt;txtKichThuoc.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtKichThuoc.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtKichThuoc.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtGiaBan.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtGiaBan.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtGiaBan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 655</value>
+  </data>
+  <data name="txtGiaBan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtGiaBan.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtGiaBan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtGiaBan.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtGiaBan.Name" xml:space="preserve">
+    <value>txtGiaBan</value>
+  </data>
+  <data name="&gt;&gt;txtGiaBan.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtGiaBan.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtGiaBan.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtChatLieu.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtChatLieu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtChatLieu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 277</value>
+  </data>
+  <data name="txtChatLieu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtChatLieu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtChatLieu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtChatLieu.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtChatLieu.Name" xml:space="preserve">
+    <value>txtChatLieu</value>
+  </data>
+  <data name="&gt;&gt;txtChatLieu.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtChatLieu.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtChatLieu.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtNuocSX.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtNuocSX.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtNuocSX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 550</value>
+  </data>
+  <data name="txtNuocSX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtNuocSX.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtNuocSX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtNuocSX.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtNuocSX.Name" xml:space="preserve">
+    <value>txtNuocSX</value>
+  </data>
+  <data name="&gt;&gt;txtNuocSX.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNuocSX.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtNuocSX.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtLoai.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtLoai.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtLoai.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 113</value>
+  </data>
+  <data name="txtLoai.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtLoai.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtLoai.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtLoai.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtLoai.Name" xml:space="preserve">
+    <value>txtLoai</value>
+  </data>
+  <data name="&gt;&gt;txtLoai.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtLoai.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtLoai.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtGiaNhap.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtGiaNhap.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtGiaNhap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 601</value>
+  </data>
+  <data name="txtGiaNhap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtGiaNhap.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtGiaNhap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtGiaNhap.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtGiaNhap.Name" xml:space="preserve">
+    <value>txtGiaNhap</value>
+  </data>
+  <data name="&gt;&gt;txtGiaNhap.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtGiaNhap.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtGiaNhap.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtHinhDang.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtHinhDang.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtHinhDang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 223</value>
+  </data>
+  <data name="txtHinhDang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtHinhDang.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtHinhDang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtHinhDang.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtHinhDang.Name" xml:space="preserve">
+    <value>txtHinhDang</value>
+  </data>
+  <data name="&gt;&gt;txtHinhDang.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtHinhDang.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtHinhDang.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtMau.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtMau.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtMau.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 497</value>
+  </data>
+  <data name="txtMau.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtMau.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtMau.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtMau.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtMau.Name" xml:space="preserve">
+    <value>txtMau</value>
+  </data>
+  <data name="&gt;&gt;txtMau.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtMau.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtMau.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtTen.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtTen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtTen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 60</value>
+  </data>
+  <data name="txtTen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtTen.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtTen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtTen.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtTen.Name" xml:space="preserve">
+    <value>txtTen</value>
+  </data>
+  <data name="&gt;&gt;txtTen.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtTen.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtTen.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtDacDiem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtDacDiem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="txtDacDiem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 442</value>
+  </data>
+  <data name="txtDacDiem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txtDacDiem.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="txtDacDiem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 39</value>
+  </data>
+  <data name="txtDacDiem.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtDacDiem.Name" xml:space="preserve">
+    <value>txtDacDiem</value>
+  </data>
+  <data name="&gt;&gt;txtDacDiem.Type" xml:space="preserve">
+    <value>QLBG.Views.CustomTextBox, QLBG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDacDiem.Parent" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;txtDacDiem.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="customTextBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="customTextBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.5pt</value>
   </data>
   <data name="customTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 9</value>
+    <value>270, 5</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="customTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
@@ -141,9 +718,8 @@
     <value>10, 7, 10, 7</value>
   </data>
   <data name="customTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 39</value>
+    <value>455, 39</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="customTextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -157,7 +733,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;customTextBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>15</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -166,7 +742,7 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 729</value>
+    <value>156, 829</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 29</value>
@@ -187,7 +763,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>16</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -196,7 +772,7 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 390</value>
+    <value>135, 448</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 29</value>
@@ -217,7 +793,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>17</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -226,7 +802,7 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 682</value>
+    <value>31, 716</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 29</value>
@@ -247,7 +823,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>18</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -256,7 +832,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 341</value>
+    <value>119, 398</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 29</value>
@@ -277,7 +853,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>19</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -286,7 +862,7 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 581</value>
+    <value>95, 606</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 29</value>
@@ -307,7 +883,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>20</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -316,7 +892,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 247</value>
+    <value>143, 282</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 29</value>
@@ -337,7 +913,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>21</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -346,7 +922,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 631</value>
+    <value>108, 663</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 29</value>
@@ -367,7 +943,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>22</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -376,7 +952,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 294</value>
+    <value>100, 337</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 29</value>
@@ -397,37 +973,37 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>23</value>
   </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbSoLuong.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbSoLuong.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 532</value>
+  <data name="lbSoLuong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 769</value>
   </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbSoLuong.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 29</value>
   </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbSoLuong.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
+  <data name="lbSoLuong.Text" xml:space="preserve">
     <value>Số lượng:</value>
   </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
+  <data name="&gt;&gt;lbSoLuong.Name" xml:space="preserve">
+    <value>lbSoLuong</value>
   </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbSoLuong.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbSoLuong.Parent" xml:space="preserve">
     <value>guna2Panel1</value>
   </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;lbSoLuong.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -436,7 +1012,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 199</value>
+    <value>128, 228</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 29</value>
@@ -457,7 +1033,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>25</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -466,7 +1042,7 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 484</value>
+    <value>87, 555</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 29</value>
@@ -487,7 +1063,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>26</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -496,7 +1072,7 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 437</value>
+    <value>191, 503</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 29</value>
@@ -517,7 +1093,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>27</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -526,7 +1102,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 145</value>
+    <value>126, 174</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 29</value>
@@ -547,7 +1123,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>28</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -556,7 +1132,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 98</value>
+    <value>191, 118</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 29</value>
@@ -577,37 +1153,37 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>29</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbMa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbMa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lbMa.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 11</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbMa.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 29</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbMa.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
+  <data name="lbMa.Text" xml:space="preserve">
     <value>Mã sản phẩm:</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="&gt;&gt;lbMa.Name" xml:space="preserve">
+    <value>lbMa</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbMa.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbMa.Parent" xml:space="preserve">
     <value>guna2Panel1</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;lbMa.ZOrder" xml:space="preserve">
+    <value>30</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -616,7 +1192,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 53</value>
+    <value>84, 65</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 29</value>
@@ -637,7 +1213,7 @@
     <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>31</value>
   </data>
   <data name="guna2Panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -646,7 +1222,7 @@
     <value>524, 0</value>
   </data>
   <data name="guna2Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>738, 838</value>
+    <value>738, 925</value>
   </data>
   <data name="guna2Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -661,7 +1237,7 @@
     <value>guna2Panel2</value>
   </data>
   <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="guna2PictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -3368,7 +3944,7 @@
     <value>0, 0</value>
   </data>
   <data name="guna2PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>524, 838</value>
+    <value>524, 925</value>
   </data>
   <data name="guna2PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -3386,7 +3962,7 @@
     <value>guna2Panel2</value>
   </data>
   <data name="&gt;&gt;guna2PictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="guna2Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3395,7 +3971,7 @@
     <value>0, 56</value>
   </data>
   <data name="guna2Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1262, 838</value>
+    <value>1262, 925</value>
   </data>
   <data name="guna2Panel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3469,10 +4045,19 @@
   <data name="&gt;&gt;guna2ShadowForm1.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2ShadowForm, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
+  <data name="&gt;&gt;guna2DragControl1.Name" xml:space="preserve">
+    <value>guna2DragControl1</value>
+  </data>
+  <data name="&gt;&gt;guna2DragControl1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DragControl, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmChiTietSanPham</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <metadata name="guna2DragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>242, 17</value>
+  </metadata>
 </root>

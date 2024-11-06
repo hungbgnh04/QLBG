@@ -76,7 +76,7 @@
             this.panelParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelParent.Location = new System.Drawing.Point(0, 100);
             this.panelParent.Name = "panelParent";
-            this.panelParent.Size = new System.Drawing.Size(1736, 1002);
+            this.panelParent.Size = new System.Drawing.Size(1736, 1024);
             this.panelParent.TabIndex = 2;
             // 
             // guna2GradientPanel2
@@ -88,7 +88,7 @@
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(129, 1102);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(129, 1124);
             this.guna2GradientPanel2.TabIndex = 1;
             // 
             // AsidePanel
@@ -313,7 +313,7 @@
             this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContainerPanel.Location = new System.Drawing.Point(129, 0);
             this.ContainerPanel.Name = "ContainerPanel";
-            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1102);
+            this.ContainerPanel.Size = new System.Drawing.Size(1736, 1124);
             this.ContainerPanel.TabIndex = 2;
             // 
             // panel2
@@ -378,7 +378,7 @@
             // frmLayout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1865, 1102);
+            this.ClientSize = new System.Drawing.Size(1865, 1124);
             this.Controls.Add(this.ContainerPanel);
             this.Controls.Add(this.guna2GradientPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

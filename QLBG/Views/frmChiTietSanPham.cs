@@ -12,9 +12,12 @@ namespace QLBG.Views
 {
     public partial class frmChiTietSanPham : Form
     {
-        public frmChiTietSanPham()
+        private int id;
+
+        public frmChiTietSanPham(int id)
         {
             InitializeComponent();
+            this.id=id;
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
@@ -30,6 +33,11 @@ namespace QLBG.Views
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnQuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -246,6 +246,7 @@
             this.theSanPham2.Name = "theSanPham2";
             this.theSanPham2.Size = new System.Drawing.Size(280, 400);
             this.theSanPham2.TabIndex = 1;
+            this.theSanPham2.Load += new System.EventHandler(this.theSanPham2_Load);
             // 
             // theSanPham3
             // 

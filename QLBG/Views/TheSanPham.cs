@@ -39,5 +39,11 @@ namespace QLBG.Views
             HangLb.Location = new Point((this.Width - HangLb.Width) / 2, (int)(this.Height - HangLb.Height - 5));
             TenLb.Location = new Point((this.Width - HangLb.Width) / 2, HangLb.Height - TenLb.Height - 5);
         }
+
+        private void TenLb_Click_1(object sender, EventArgs e)
+        {
+            var chiTietSanPham = new frmChiTietSanPham(MaSP);
+            chiTietSanPham.Show();
+        }
     }
 }
