@@ -266,6 +266,12 @@
     <Compile Include="DTO\NuocSXDTO.cs" />
     <Compile Include="DTO\ProductDTO.cs" />
     <Compile Include="Helpers\App_Default.cs" />
+    <Compile Include="Views\ChiTietNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ChiTietNhanVien.Designer.cs">
+      <DependentUpon>ChiTietNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CustomTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -317,7 +323,7 @@
       <DependentUpon>SanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\ThemNhanVien.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\ThemNhanVien.Designer.cs">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
@@ -344,6 +350,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ChiTietNhanVien.resx">
+      <DependentUpon>ChiTietNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomTextBox.resx">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -506,6 +515,15 @@
     <None Include="Resources\plastic-chair-clipart.png" />
     <None Include="Resources\icons8-print-30.png" />
     <None Include="Resources\icons8-search-50.png" />
+    <Content Include="Resources\EmployeeImages\KY.jpeg" />
+    <None Include="Resources\icons8-search-30.png" />
+    <None Include="Resources\icons8-create-30 %281%29.png" />
+    <None Include="Resources\icons8-create-30.png" />
+    <None Include="Resources\icons8-create-60.png" />
+    <None Include="Resources\icons8-picture-500.png" />
+    <Content Include="Resources\eye.png" />
+    <None Include="Resources\eye1.png" />
+    <None Include="Resources\icons8-picture-5001.png" />
     <Content Include="Resources\ProductImages\default_product.png" />
   </ItemGroup>
   <ItemGroup />

@@ -3,6 +3,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using ClosedXML.Excel;
 using QLBG.DAL;
@@ -25,10 +26,15 @@ namespace QLBG.Views
             base.OnLoad(e);
             RoundCorners(this, 60);
             LoadEmployeeData();
+
             lblSoLuongNhanVien.Text = $"{guna2DataGridView1.Rows.Count}";
-            comboBoxSortBy.Items.Add("Mã Nhân Viên");
-            comboBoxSortBy.Items.Add("Tên Nhân Viên");
+            comboBoxSortBy.Items.AddRange(new string[]
+            {
+                "MaNV", "TenNV", "GioiTinh",
+                "NgaySinh", "DienThoai", "DiaChi", "TenCV"
+            });
             comboBoxSortBy.SelectedIndex = 0;
+
             textBoxTenDeTimKiem.KeyDown += textBoxTenDeTimKiem_KeyDown;
             comboBoxSortBy.SelectedIndexChanged += ComboBoxSortBy_SelectedIndexChanged;
         }
@@ -49,71 +55,69 @@ namespace QLBG.Views
         {
             guna2DataGridView1.Columns.Clear();
 
-            // Cột Mã Nhân Viên
-            DataGridViewTextBoxColumn maNVCol = new DataGridViewTextBoxColumn
-            {
-                Name = "MaNV",
-                HeaderText = "Mã Nhân Viên"
-            };
-            guna2DataGridView1.Columns.Add(maNVCol);
-
-            // Cột ảnh
-            DataGridViewImageColumn imgCol = new DataGridViewImageColumn
+            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn { Name = "MaNV", HeaderText = "Mã Nhân Viên" });
+            guna2DataGridView1.Columns.Add(new DataGridViewImageColumn
             {
                 Name = "Anh",
-                HeaderText = "Ảnh",
+                HeaderText = "Ảnh của nhân viên",
+                ImageLayout = DataGridViewImageCellLayout.Zoom
+            });
+            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn { Name = "TenNV", HeaderText = "Tên Nhân Viên" });
+            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn { Name = "GioiTinh", HeaderText = "Giới Tính" });
+            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn { Name = "NgaySinh", HeaderText = "Ngày Sinh" });
+            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn { Name = "DienThoai", HeaderText = "Điện Thoại" });
+            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn { Name = "DiaChi", HeaderText = "Địa Chỉ" });
+            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn { Name = "TenCV", HeaderText = "Công Việc" });
+
+            // Thêm cột hình ảnh "Xem Chi Tiết"
+            DataGridViewImageColumn viewImageColumn = new DataGridViewImageColumn
+            {
+                Name = "View",
+                HeaderText = "Xem Chi Tiết thông tin",
+                Image = global::QLBG.Properties.Resources.eye, // Đảm bảo hình ảnh được thêm vào tài nguyên dự án
                 ImageLayout = DataGridViewImageCellLayout.Zoom
             };
-            guna2DataGridView1.Columns.Add(imgCol);
+            guna2DataGridView1.Columns.Add(viewImageColumn);
 
-            // Cột tên nhân viên
-            DataGridViewTextBoxColumn tenNVCol = new DataGridViewTextBoxColumn
-            {
-                Name = "TenNV",
-                HeaderText = "Tên Nhân Viên"
-            };
-            guna2DataGridView1.Columns.Add(tenNVCol);
-
-            // Cột giới tính
-            DataGridViewTextBoxColumn gioiTinhCol = new DataGridViewTextBoxColumn
-            {
-                Name = "GioiTinh",
-                HeaderText = "Giới Tính"
-            };
-            guna2DataGridView1.Columns.Add(gioiTinhCol);
-
-            // Cột ngày sinh
-            DataGridViewTextBoxColumn ngaySinhCol = new DataGridViewTextBoxColumn
-            {
-                Name = "NgaySinh",
-                HeaderText = "Ngày Sinh"
-            };
-            guna2DataGridView1.Columns.Add(ngaySinhCol);
-
-            // Cột điện thoại
-            DataGridViewTextBoxColumn dienThoaiCol = new DataGridViewTextBoxColumn
-            {
-                Name = "DienThoai",
-                HeaderText = "Điện Thoại"
-            };
-            guna2DataGridView1.Columns.Add(dienThoaiCol);
-
-            // Cột địa chỉ
-            DataGridViewTextBoxColumn diaChiCol = new DataGridViewTextBoxColumn
-            {
-                Name = "DiaChi",
-                HeaderText = "Địa Chỉ"
-            };
-            guna2DataGridView1.Columns.Add(diaChiCol);
-
-            // Cột tên công việc
-            DataGridViewTextBoxColumn tenCVCol = new DataGridViewTextBoxColumn
-            {
-                Name = "TenCV",
-                HeaderText = "Công Việc"
-            };
-            guna2DataGridView1.Columns.Add(tenCVCol);
+            // Đăng ký sự kiện CellContentClick
+            guna2DataGridView1.CellContentClick += guna2DataGridView1_CellContentClick;
         }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                string columnName = guna2DataGridView1.Columns[e.ColumnIndex].Name;
+
+                if (columnName == "View")
+                {
+                    // Lấy thông tin nhân viên từ hàng được nhấp
+                    string maNV = guna2DataGridView1.Rows[e.RowIndex].Cells["MaNV"].Value?.ToString();
+                    if (!string.IsNullOrEmpty(maNV))
+                    {
+                        // Hiển thị chi tiết nhân viên (ví dụ: mở một form chi tiết)
+                        ChiTietNhanVien chiTietForm = new ChiTietNhanVien(maNV);
+                        chiTietForm.EmployeeUpdated += (s, args) => LoadEmployeeData(); // Đăng ký sự kiện
+                        chiTietForm.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Mã nhân viên không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    // Xử lý các cột khác nếu cần
+                    string cellValue = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString() ?? "null";
+
+                    MessageBox.Show($"Clicked on column '{columnName}' at row {e.RowIndex}. Value: {cellValue}",
+                                    "Cell Click Event",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+                }
+            }
+        }
+
 
         private void LoadEmployeeData()
         {
@@ -129,14 +133,10 @@ namespace QLBG.Views
                 int rowIndex = guna2DataGridView1.Rows.Add();
                 DataGridViewRow dgvRow = guna2DataGridView1.Rows[rowIndex];
 
-                // Thêm dữ liệu vào cột Mã Nhân Viên
                 dgvRow.Cells["MaNV"].Value = row["MaNV"].ToString();
-
-                // Lấy tên ảnh từ cơ sở dữ liệu và tạo đường dẫn đầy đủ
                 string imageName = row["Anh"].ToString();
                 string imagePath = Path.Combine(imageDirectory, imageName);
 
-                // Kiểm tra nếu ảnh tồn tại thì tải ảnh, nếu không sử dụng ảnh mặc định
                 if (!string.IsNullOrEmpty(imageName) && File.Exists(imagePath))
                 {
                     dgvRow.Cells["Anh"].Value = Image.FromFile(imagePath);
@@ -150,7 +150,6 @@ namespace QLBG.Views
                     dgvRow.Cells["Anh"].Value = DBNull.Value;
                 }
 
-                // Các cột khác
                 dgvRow.Cells["TenNV"].Value = row["TenNV"].ToString();
                 dgvRow.Cells["GioiTinh"].Value = Convert.ToBoolean(row["GioiTinh"]) ? "Nam" : "Nữ";
                 dgvRow.Cells["NgaySinh"].Value = Convert.ToDateTime(row["NgaySinh"]).ToString("dd/MM/yyyy");
@@ -163,18 +162,8 @@ namespace QLBG.Views
         private void ComboBoxSortBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             string sortBy = comboBoxSortBy.SelectedItem.ToString();
-            DataGridViewColumn columnToSort = null;
+            DataGridViewColumn columnToSort = guna2DataGridView1.Columns[sortBy];
 
-            if (sortBy == "Mã Nhân Viên")
-            {
-                columnToSort = guna2DataGridView1.Columns["MaNV"];
-            }
-            else if (sortBy == "Tên Nhân Viên")
-            {
-                columnToSort = guna2DataGridView1.Columns["TenNV"];
-            }
-
-            // Kiểm tra nếu cột tồn tại trước khi sắp xếp
             if (columnToSort != null)
             {
                 guna2DataGridView1.Sort(columnToSort, System.ComponentModel.ListSortDirection.Ascending);
@@ -199,23 +188,33 @@ namespace QLBG.Views
                     {
                         var worksheet = workbook.Worksheets.Add("Employees");
 
-                        // Tiêu đề cột
                         for (int i = 0; i < guna2DataGridView1.Columns.Count; i++)
                         {
+                            // Bỏ qua cột hình ảnh "Anh" và cột "View"
+                            if (guna2DataGridView1.Columns[i].Name == "Anh" || guna2DataGridView1.Columns[i].Name == "View")
+                                continue;
+
                             worksheet.Cell(1, i + 1).Value = guna2DataGridView1.Columns[i].HeaderText;
                         }
 
-                        // Dữ liệu từ DataGridView
-                        for (int i = 0; i < guna2DataGridView1.Rows.Count; i++)
+                        int excelRow = 2;
+                        foreach (DataGridViewRow row in guna2DataGridView1.Rows)
                         {
+                            if (row.IsNewRow) continue;
+
+                            int excelCol = 1;
                             for (int j = 0; j < guna2DataGridView1.Columns.Count; j++)
                             {
-                                var cellValue = guna2DataGridView1.Rows[i].Cells[j].Value;
-                                worksheet.Cell(i + 2, j + 1).Value = cellValue is DBNull ? "" : cellValue.ToString();
+                                if (guna2DataGridView1.Columns[j].Name == "Anh" || guna2DataGridView1.Columns[j].Name == "View")
+                                    continue;
+
+                                var cellValue = row.Cells[j].Value;
+                                worksheet.Cell(excelRow, excelCol).Value = cellValue is DBNull ? "" : cellValue.ToString();
+                                excelCol++;
                             }
+                            excelRow++;
                         }
 
-                        // Lưu file
                         workbook.SaveAs(saveFileDialog.FileName);
                         MessageBox.Show("Xuất dữ liệu ra Excel thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -225,46 +224,32 @@ namespace QLBG.Views
 
         private void btnTaoNhanVien_Click(object sender, EventArgs e)
         {
-            // Xử lý logic tạo nhân viên
+            ThemNhanVien taoNhanVienForm = new ThemNhanVien();
+            taoNhanVienForm.NhanVienAdded += (s, args) => LoadEmployeeData();
+            taoNhanVienForm.ShowDialog();
         }
 
         private void btnTimKiemTheoTen_Click(object sender, EventArgs e)
         {
             string searchName = textBoxTenDeTimKiem.Text.Trim().ToLower();
 
-            // Nếu ô tìm kiếm trống, hiển thị tất cả các hàng
-            if (string.IsNullOrEmpty(searchName))
-            {
-                foreach (DataGridViewRow row in guna2DataGridView1.Rows)
-                {
-                    row.Visible = true;
-                }
-                return;
-            }
-
-            // Lọc các hàng trong DataGridView dựa trên tên nhân viên
             foreach (DataGridViewRow row in guna2DataGridView1.Rows)
             {
-                if (row.Cells["TenNV"].Value != null &&
-                    row.Cells["TenNV"].Value.ToString().ToLower().Contains(searchName))
-                {
-                    row.Visible = true;
-                }
-                else
-                {
-                    row.Visible = false;
-                }
+                row.Visible = string.IsNullOrEmpty(searchName) ||
+                              (row.Cells["TenNV"].Value != null &&
+                               row.Cells["TenNV"].Value.ToString().ToLower().Contains(searchName));
             }
+
+            lblSoLuongNhanVien.Text = $"{guna2DataGridView1.Rows.Cast<DataGridViewRow>().Count(r => r.Visible)}";
         }
 
         private void textBoxTenDeTimKiem_KeyDown(object sender, KeyEventArgs e)
         {
-            // Kiểm tra nếu phím Enter được nhấn
             if (e.KeyCode == Keys.Enter)
             {
-                btnTimKiemTheoTen_Click(sender, e); // Gọi sự kiện tìm kiếm
+                btnTimKiemTheoTen_Click(sender, e);
                 e.Handled = true;
-                e.SuppressKeyPress = true; // Ngăn không cho âm thanh beep
+                e.SuppressKeyPress = true;
             }
         }
     }
