@@ -32,8 +32,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChiTietSanPham));
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSua = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuayLai = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtGhiChu = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCongDung = new QLBG.Views.CustomTextBox();
+            this.txtBaoHanh = new QLBG.Views.CustomTextBox();
+            this.txtNhaSX = new QLBG.Views.CustomTextBox();
+            this.txtSoLuong = new QLBG.Views.CustomTextBox();
+            this.txtKichThuoc = new QLBG.Views.CustomTextBox();
+            this.txtGiaBan = new QLBG.Views.CustomTextBox();
+            this.txtChatLieu = new QLBG.Views.CustomTextBox();
+            this.txtNuocSX = new QLBG.Views.CustomTextBox();
+            this.txtLoai = new QLBG.Views.CustomTextBox();
+            this.txtGiaNhap = new QLBG.Views.CustomTextBox();
+            this.txtHinhDang = new QLBG.Views.CustomTextBox();
+            this.txtMau = new QLBG.Views.CustomTextBox();
+            this.txtTen = new QLBG.Views.CustomTextBox();
+            this.txtDacDiem = new QLBG.Views.CustomTextBox();
+            this.customTextBox1 = new QLBG.Views.CustomTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -52,24 +70,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCongDung = new QLBG.Views.CustomTextBox();
-            this.txtBaoHanh = new QLBG.Views.CustomTextBox();
-            this.txtNhaSX = new QLBG.Views.CustomTextBox();
-            this.txtSoLuong = new QLBG.Views.CustomTextBox();
-            this.txtKichThuoc = new QLBG.Views.CustomTextBox();
-            this.txtGiaBan = new QLBG.Views.CustomTextBox();
-            this.txtChatLieu = new QLBG.Views.CustomTextBox();
-            this.txtNuocSX = new QLBG.Views.CustomTextBox();
-            this.txtLoai = new QLBG.Views.CustomTextBox();
-            this.txtGiaNhap = new QLBG.Views.CustomTextBox();
-            this.txtHinhDang = new QLBG.Views.CustomTextBox();
-            this.txtMau = new QLBG.Views.CustomTextBox();
-            this.txtTen = new QLBG.Views.CustomTextBox();
-            this.txtDacDiem = new QLBG.Views.CustomTextBox();
-            this.customTextBox1 = new QLBG.Views.CustomTextBox();
-            this.btnQuayLai = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSua = new Guna.UI2.WinForms.Guna2Button();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -89,6 +89,43 @@
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
             resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
             this.guna2Panel2.Name = "guna2Panel2";
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BorderRadius = 10;
+            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoa.FillColor = System.Drawing.Color.Tomato;
+            resources.ApplyResources(this.btnXoa, "btnXoa");
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Name = "btnXoa";
+            // 
+            // btnSua
+            // 
+            this.btnSua.BorderRadius = 10;
+            this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            resources.ApplyResources(this.btnSua, "btnSua");
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Name = "btnSua";
+            // 
+            // btnQuayLai
+            // 
+            this.btnQuayLai.BorderRadius = 10;
+            this.btnQuayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnQuayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnQuayLai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            resources.ApplyResources(this.btnQuayLai, "btnQuayLai");
+            this.btnQuayLai.ForeColor = System.Drawing.Color.White;
+            this.btnQuayLai.Name = "btnQuayLai";
+            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
             // guna2Panel1
             // 
@@ -145,105 +182,6 @@
             this.txtGhiChu.PasswordChar = '\0';
             this.txtGhiChu.PlaceholderText = "Ghi chú";
             this.txtGhiChu.SelectedText = "";
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
-            this.label14.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            this.label8.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // lbSoLuong
-            // 
-            resources.ApplyResources(this.lbSoLuong, "lbSoLuong");
-            this.lbSoLuong.Name = "lbSoLuong";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            this.label12.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // lbMa
-            // 
-            resources.ApplyResources(this.lbMa, "lbMa");
-            this.lbMa.Name = "lbMa";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // txtCongDung
             // 
@@ -500,42 +438,104 @@
             this.customTextBox1.Texts = "";
             this.customTextBox1.UnderlinedStyle = true;
             // 
-            // btnQuayLai
+            // label17
             // 
-            this.btnQuayLai.BorderRadius = 10;
-            this.btnQuayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnQuayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnQuayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnQuayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnQuayLai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
-            resources.ApplyResources(this.btnQuayLai, "btnQuayLai");
-            this.btnQuayLai.ForeColor = System.Drawing.Color.White;
-            this.btnQuayLai.Name = "btnQuayLai";
-            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
             // 
-            // btnSua
+            // label10
             // 
-            this.btnSua.BorderRadius = 10;
-            this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
-            resources.ApplyResources(this.btnSua, "btnSua");
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Name = "btnSua";
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
             // 
-            // btnXoa
+            // label16
             // 
-            this.btnXoa.BorderRadius = 10;
-            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXoa.FillColor = System.Drawing.Color.Tomato;
-            resources.ApplyResources(this.btnXoa, "btnXoa");
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Name = "btnXoa";
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            this.label14.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            this.label8.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // lbSoLuong
+            // 
+            resources.ApplyResources(this.lbSoLuong, "lbSoLuong");
+            this.lbSoLuong.Name = "lbSoLuong";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            this.label12.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // lbMa
+            // 
+            resources.ApplyResources(this.lbMa, "lbMa");
+            this.lbMa.Name = "lbMa";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // guna2DragControl1
             // 

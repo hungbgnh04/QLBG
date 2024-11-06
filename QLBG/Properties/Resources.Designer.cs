@@ -83,6 +83,16 @@ namespace QLBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eye {
+            get {
+                object obj = ResourceManager.GetObject("eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_bill_black_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8_bill_black_30", resourceCulture);
@@ -156,6 +166,36 @@ namespace QLBG.Properties {
         internal static System.Drawing.Bitmap icons8_combo_chart_52px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_combo_chart_52px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_create_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-create-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_create_30__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-create-30 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_create_60 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-create-60", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +326,26 @@ namespace QLBG.Properties {
         internal static System.Drawing.Bitmap icons8_password_301 {
             get {
                 object obj = ResourceManager.GetObject("icons8_password_301", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_picture_500 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-picture-500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_picture_5001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-picture-5001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
