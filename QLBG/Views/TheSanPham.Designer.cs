@@ -107,7 +107,7 @@
 
         #endregion
         public System.Windows.Forms.Label HangLb;
-        public System.Windows.Forms.Label TenLb;
+        public System.Windows.Forms.Label TenLb;//
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
     }

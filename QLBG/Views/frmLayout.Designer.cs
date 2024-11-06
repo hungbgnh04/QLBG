@@ -400,7 +400,7 @@
         private Guna.UI2.WinForms.Guna2Button EmployeeBtn;
         private Guna.UI2.WinForms.Guna2Button CustomerBtn;
         private Guna.UI2.WinForms.Guna2ControlBox CloseControl;
-        private System.Windows.Forms.Panel panelParent;
+        private System.Windows.Forms.Panel panelParent;//
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Panel ContainerPanel;
         private System.Windows.Forms.Panel panel2;

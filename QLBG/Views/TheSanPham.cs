@@ -42,7 +42,7 @@ namespace QLBG.Views
 
         private void TenLb_Click_1(object sender, EventArgs e)
         {
-            var chiTietSanPham = new frmChiTietSanPham(MaSP);
+            var chiTietSanPham = new frmChiTietSanPham(MaSP, frmChiTietSanPham.Mode.View);
             chiTietSanPham.Show();
         }
     }

@@ -102,6 +102,6 @@
 
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.TabPage pgHoaDonBan;
-        private System.Windows.Forms.TabPage pgHoaDonNhap;
+        private System.Windows.Forms.TabPage pgHoaDonNhap;//
     }
 }

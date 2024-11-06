@@ -41,6 +41,11 @@
             this.pgHinhDang = new System.Windows.Forms.TabPage();
             this.pgDacDiem = new System.Windows.Forms.TabPage();
             this.pgCongDung = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ThemBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.TimBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.theSanPham1 = new QLBG.Views.TheSanPham();
             this.theSanPham2 = new QLBG.Views.TheSanPham();
             this.theSanPham3 = new QLBG.Views.TheSanPham();
@@ -50,6 +55,7 @@
             this.guna2TabControl1.SuspendLayout();
             this.pgSanPham.SuspendLayout();
             this.SanPhamPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -95,6 +101,7 @@
             this.pgSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.pgSanPham.Controls.Add(this.guna2VScrollBar1);
             this.pgSanPham.Controls.Add(this.SanPhamPanel);
+            this.pgSanPham.Controls.Add(this.panel1);
             this.pgSanPham.Location = new System.Drawing.Point(4, 64);
             this.pgSanPham.Name = "pgSanPham";
             this.pgSanPham.Padding = new System.Windows.Forms.Padding(3);
@@ -109,12 +116,12 @@
             this.guna2VScrollBar1.BorderRadius = 12;
             this.guna2VScrollBar1.FillColor = System.Drawing.Color.Transparent;
             this.guna2VScrollBar1.InUpdate = false;
-            this.guna2VScrollBar1.LargeChange = 950;
-            this.guna2VScrollBar1.Location = new System.Drawing.Point(1699, 3);
-            this.guna2VScrollBar1.Maximum = 1405;
+            this.guna2VScrollBar1.LargeChange = 870;
+            this.guna2VScrollBar1.Location = new System.Drawing.Point(1699, 83);
+            this.guna2VScrollBar1.Maximum = 899;
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
             this.guna2VScrollBar1.ScrollbarSize = 26;
-            this.guna2VScrollBar1.Size = new System.Drawing.Size(26, 950);
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(26, 870);
             this.guna2VScrollBar1.SmallChange = 5;
             this.guna2VScrollBar1.TabIndex = 8;
             this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
@@ -130,10 +137,10 @@
             this.SanPhamPanel.Controls.Add(this.theSanPham5);
             this.SanPhamPanel.Controls.Add(this.theSanPham6);
             this.SanPhamPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SanPhamPanel.Location = new System.Drawing.Point(3, 3);
+            this.SanPhamPanel.Location = new System.Drawing.Point(3, 83);
             this.SanPhamPanel.Name = "SanPhamPanel";
             this.SanPhamPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.SanPhamPanel.Size = new System.Drawing.Size(1722, 950);
+            this.SanPhamPanel.Size = new System.Drawing.Size(1722, 870);
             this.SanPhamPanel.TabIndex = 0;
             // 
             // pgChatLieu
@@ -225,6 +232,97 @@
             this.pgCongDung.TabIndex = 9;
             this.pgCongDung.Text = "Công dụng";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.TimBtn);
+            this.panel1.Controls.Add(this.guna2TextBox1);
+            this.panel1.Controls.Add(this.ThemBtn);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1722, 80);
+            this.panel1.TabIndex = 9;
+            // 
+            // ThemBtn
+            // 
+            this.ThemBtn.BorderRadius = 20;
+            this.ThemBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ThemBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ThemBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ThemBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ThemBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            this.ThemBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.ThemBtn.ForeColor = System.Drawing.Color.White;
+            this.ThemBtn.Location = new System.Drawing.Point(17, 16);
+            this.ThemBtn.Name = "ThemBtn";
+            this.ThemBtn.Size = new System.Drawing.Size(180, 45);
+            this.ThemBtn.TabIndex = 0;
+            this.ThemBtn.Text = "Thêm sản phẩm";
+            this.ThemBtn.Click += new System.EventHandler(this.ThemBtn_Click);
+            // 
+            // TimBtn
+            // 
+            this.TimBtn.BackColor = System.Drawing.Color.Transparent;
+            this.TimBtn.BorderColor = System.Drawing.Color.Silver;
+            this.TimBtn.BorderRadius = 20;
+            this.TimBtn.BorderThickness = 1;
+            this.TimBtn.CustomizableEdges.BottomLeft = false;
+            this.TimBtn.CustomizableEdges.TopLeft = false;
+            this.TimBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.TimBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.TimBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.TimBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.TimBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(230)))));
+            this.TimBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TimBtn.ForeColor = System.Drawing.Color.Black;
+            this.TimBtn.Image = global::QLBG.Properties.Resources.icons8_search_50;
+            this.TimBtn.Location = new System.Drawing.Point(1646, 5);
+            this.TimBtn.Name = "TimBtn";
+            this.TimBtn.Size = new System.Drawing.Size(60, 60);
+            this.TimBtn.TabIndex = 0;
+            this.TimBtn.Click += new System.EventHandler(this.TimBtn_Click);
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.Silver;
+            this.guna2TextBox1.BorderRadius = 20;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.CustomizableEdges.BottomRight = false;
+            this.guna2TextBox1.CustomizableEdges.TopRight = false;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(230)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(1365, 5);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(280, 60);
+            this.guna2TextBox1.TabIndex = 1;
+            this.guna2TextBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox1_KeyUp);
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // theSanPham1
             // 
             this.theSanPham1.BackColor = System.Drawing.Color.Transparent;
@@ -303,6 +401,7 @@
             this.guna2TabControl1.ResumeLayout(false);
             this.pgSanPham.ResumeLayout(false);
             this.SanPhamPanel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -312,7 +411,7 @@
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.TabPage pgSanPham;
         private System.Windows.Forms.TabPage pgChatLieu;
-        private System.Windows.Forms.TabPage pgNhaSX;
+        private System.Windows.Forms.TabPage pgNhaSX;//
         private System.Windows.Forms.TabPage pgNuocSX;
         private System.Windows.Forms.TabPage pgKichCo;
         private System.Windows.Forms.TabPage pgMauSac;
@@ -328,5 +427,10 @@
         private TheSanPham theSanPham4;
         private TheSanPham theSanPham5;
         private TheSanPham theSanPham6;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2Button TimBtn;
+        private Guna.UI2.WinForms.Guna2Button ThemBtn;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
     }
 }

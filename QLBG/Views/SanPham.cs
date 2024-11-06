@@ -17,16 +17,28 @@ namespace QLBG.Views
             InitializeComponent();
         }
 
-        private void ChiTietSanPham(object sender, EventArgs e)
-        {
-            var sp = sender as TheSanPham;
-            var chiTietSanPham = new frmChiTietSanPham(sp.MaSP);
-            chiTietSanPham.Show();
-        }
-
         private void theSanPham2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ThemBtn_Click(object sender, EventArgs e)
+        {
+            var chiTietSanPham = new frmChiTietSanPham(0, frmChiTietSanPham.Mode.Add);
+            chiTietSanPham.Show();
+        }
+
+        private void TimBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                TimBtn_Click(sender, e);
+            }
         }
     }
 }

@@ -294,6 +294,7 @@
     <None Include="Resources\office-chair-icon-4.jpg" />
     <None Include="Resources\plastic-chair-clipart.png" />
     <None Include="Resources\icons8-print-30.png" />
+    <None Include="Resources\icons8-search-50.png" />
     <Content Include="Resources\ProductImages\default_product.png" />
   </ItemGroup>
   <ItemGroup />
