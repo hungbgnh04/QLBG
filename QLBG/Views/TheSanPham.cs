@@ -45,5 +45,10 @@ namespace QLBG.Views
             var chiTietSanPham = new frmChiTietSanPham(MaSP, frmChiTietSanPham.Mode.View);
             chiTietSanPham.Show();
         }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

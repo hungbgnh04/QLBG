@@ -188,7 +188,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(79, 45);
+            this.label2.Location = new System.Drawing.Point(95, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 25);
             this.label2.TabIndex = 1;
@@ -199,7 +199,7 @@
             this.lblSoLuongNhanVien.AutoSize = true;
             this.lblSoLuongNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblSoLuongNhanVien.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblSoLuongNhanVien.Location = new System.Drawing.Point(36, 35);
+            this.lblSoLuongNhanVien.Location = new System.Drawing.Point(33, 39);
             this.lblSoLuongNhanVien.Name = "lblSoLuongNhanVien";
             this.lblSoLuongNhanVien.Size = new System.Drawing.Size(55, 38);
             this.lblSoLuongNhanVien.TabIndex = 0;
