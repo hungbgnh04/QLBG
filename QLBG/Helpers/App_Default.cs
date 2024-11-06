@@ -9,8 +9,10 @@ namespace QLBG.Helpers
         public static string SenderPassword { get; } = "ijfaldgglybtrkgh";
         public static string SmtpHost { get; } = "smtp.gmail.com";
         public static int SmtpPort { get; } = 587;
+        public static string DefaultConnectionString1 { get; } =
+            $@"Data Source=DANMINHTRAN\SQLEXPRESS;Initial Catalog=QL;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;";
 
-        // Sử dụng Path.Combine và AppDomain.CurrentDomain.BaseDirectory để đảm bảo đường dẫn chính xác
+
         public static string DefaultConnectionString { get; } =
             $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data", "QLBG.mdf")};Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;";
 

@@ -93,26 +93,29 @@ namespace QLBG.DAL
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                using (SqlCommand command = new SqlCommand(query, connection))
+                connection.Open();
+                using (SqlTransaction transaction = connection.BeginTransaction()) // Bắt đầu giao dịch
+                using (SqlCommand command = new SqlCommand(query, connection, transaction))
                 {
                     command.Parameters.AddRange(parameters);
-                    OpenConnection(connection);
+
                     try
                     {
-                        return command.ExecuteNonQuery();
                         int result = command.ExecuteNonQuery();
-                        // Log kết quả
+                        transaction.Commit(); // Cam kết giao dịch nếu lệnh thành công
                         Console.WriteLine($"ExecuteNonQuery: {query}, RowsAffected: {result}");
                         return result;
                     }
                     catch (Exception ex)
                     {
+                        transaction.Rollback(); // Rollback giao dịch nếu có lỗi
                         ShowErrorMessage("Error executing non-query: " + ex.Message);
                         return -1;
                     }
                 }
             }
         }
+
 
 
         /// <summary>

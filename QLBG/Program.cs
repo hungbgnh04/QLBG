@@ -19,7 +19,7 @@ namespace QLBG
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLBG.Views.LoginForm());
+            Application.Run(new QLBG.Views.frmLayout());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

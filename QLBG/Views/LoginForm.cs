@@ -214,9 +214,8 @@ namespace QLBG.Views
                     // form3.Show();
 
                     // Đoạn này bạn có thể thay bằng hành động mong muốn sau khi đăng nhập thành công
-                    string url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-                    Process.Start(new ProcessStartInfo("cmd", $"/c start {url}")
-                    { CreateNoWindow = true });
+                    frmLayout frmLayout = new frmLayout();
+                    frmLayout.Show();
                 }
                 else
                 {
@@ -613,7 +612,7 @@ namespace QLBG.Views
 
         private void btnAcceptCheckOTP_MouseHover(object sender, EventArgs e)
         {
-            //btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Black;
+            btnAcceptCheckOTP.ForeColor = System.Drawing.Color.Black;
         }
 
         private void btnAcceptCheckOTP_MouseLeave(object sender, EventArgs e)
