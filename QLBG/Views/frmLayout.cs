@@ -155,6 +155,7 @@ namespace QLBG.Views
 
         private void EmployeeBtn_Click(object sender, EventArgs e)
         {
+            ShowControl(new NhanVien());
             moveEffect(sender);
             HomeLabel.Text = "Danh sách nhân viên";
         }

@@ -216,6 +216,7 @@ namespace QLBG.Views
                     // Đoạn này bạn có thể thay bằng hành động mong muốn sau khi đăng nhập thành công
                     frmLayout frmLayout = new frmLayout();
                     frmLayout.Show();
+
                 }
                 else
                 {
