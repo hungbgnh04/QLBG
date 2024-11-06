@@ -128,7 +128,7 @@
             this.btnTimKiemTheoTen.FillColor = System.Drawing.Color.White;
             this.btnTimKiemTheoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTimKiemTheoTen.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiemTheoTen.Image = global::QLBG.Properties.Resources.icons8_search_30;
+            //this.btnTimKiemTheoTen.Image = global::QLBG.Properties.Resources.icons8_search_30;
             this.btnTimKiemTheoTen.Location = new System.Drawing.Point(982, 18);
             this.btnTimKiemTheoTen.Name = "btnTimKiemTheoTen";
             this.btnTimKiemTheoTen.Size = new System.Drawing.Size(40, 38);

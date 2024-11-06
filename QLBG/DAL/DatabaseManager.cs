@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace QLBG.DAL
 {
@@ -15,6 +16,7 @@ namespace QLBG.DAL
         private DatabaseManager()
         {
             connectionString = App_Default.DefaultConnectionString;
+            //connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         }
 
         public static DatabaseManager Instance
@@ -80,7 +82,7 @@ namespace QLBG.DAL
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                using (SqlTransaction transaction = connection.BeginTransaction()) // Bắt đầu giao dịch
+                using (SqlTransaction transaction = connection.BeginTransaction())
                 using (SqlCommand command = new SqlCommand(query, connection, transaction))
                 {
                     command.Parameters.AddRange(parameters);
@@ -88,19 +90,25 @@ namespace QLBG.DAL
                     try
                     {
                         int result = command.ExecuteNonQuery();
-                        transaction.Commit(); // Cam kết giao dịch nếu lệnh thành công
-                        Console.WriteLine($"ExecuteNonQuery: {query}, RowsAffected: {result}");
+                        transaction.Commit();
+                        Console.WriteLine($"Query executed: {query}");
+                        Console.WriteLine($"Rows affected: {result}");
+                        foreach (var param in parameters)
+                        {
+                            Console.WriteLine($"{param.ParameterName}: {param.Value}");
+                        }
                         return result;
                     }
                     catch (Exception ex)
                     {
-                        transaction.Rollback(); // Rollback giao dịch nếu có lỗi
+                        transaction.Rollback();
                         ShowErrorMessage("Error executing non-query: " + ex.Message);
                         return -1;
                     }
                 }
             }
         }
+
 
         public object ExecuteScalar(string query, params SqlParameter[] parameters)
         {

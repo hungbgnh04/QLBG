@@ -59,21 +59,6 @@
             this.txtTenHangHoa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtGhiChu = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCongDung = new QLBG.Views.CustomTextBox();
-            this.txtBaoHanh = new QLBG.Views.CustomTextBox();
-            this.txtNhaSX = new QLBG.Views.CustomTextBox();
-            this.txtSoLuong = new QLBG.Views.CustomTextBox();
-            this.txtKichThuoc = new QLBG.Views.CustomTextBox();
-            this.txtGiaBan = new QLBG.Views.CustomTextBox();
-            this.txtChatLieu = new QLBG.Views.CustomTextBox();
-            this.txtNuocSX = new QLBG.Views.CustomTextBox();
-            this.txtLoai = new QLBG.Views.CustomTextBox();
-            this.txtGiaNhap = new QLBG.Views.CustomTextBox();
-            this.txtHinhDang = new QLBG.Views.CustomTextBox();
-            this.txtMau = new QLBG.Views.CustomTextBox();
-            this.txtTen = new QLBG.Views.CustomTextBox();
-            this.txtDacDiem = new QLBG.Views.CustomTextBox();
-            this.customTextBox1 = new QLBG.Views.CustomTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -214,6 +199,7 @@
             resources.ApplyResources(this.btnXoa, "btnXoa");
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnHuy
             // 

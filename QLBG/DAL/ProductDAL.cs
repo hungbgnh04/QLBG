@@ -92,6 +92,14 @@ namespace QLBG.DAL
             return rowsAffected > 0;
         }
 
+        public bool DeleteProduct(int maHang)
+        {
+            string query = "DELETE FROM DMHangHoa WHERE MaHang = @MaHang";
+            SqlParameter parameter = new SqlParameter("@MaHang", maHang);
+            int rowsAffected = DatabaseManager.Instance.ExecuteNonQuery(query, parameter);
+            return rowsAffected > 0;
+        }
+
 
         public ProductDTO GetProductById(int productId)
         {

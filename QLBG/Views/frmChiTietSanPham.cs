@@ -401,6 +401,28 @@ namespace QLBG.Views
                 MessageBox.Show("Cập nhật sản phẩm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm này?",
+                                        "Xác nhận xóa",
+                                        MessageBoxButtons.YesNo,
+                                        MessageBoxIcon.Warning);
+            if (confirmResult == DialogResult.Yes)
+            {
+                bool isDeleted = productDAL.DeleteProduct(id); // 'id' là mã sản phẩm hiện tại
+
+                if (isDeleted)
+                {
+                    MessageBox.Show("Sản phẩm đã được xóa thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close(); // Đóng form sau khi xóa thành công
+                }
+                else
+                {
+                    MessageBox.Show("Xóa sản phẩm thất bại. Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
 
